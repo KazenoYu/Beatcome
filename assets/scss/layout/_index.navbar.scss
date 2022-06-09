@@ -1,0 +1,25 @@
+.navbar{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 90%;
+	padding:8px 5%;
+
+
+>ul{
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+}
+
+>ul>li{
+	padding:10px;
+}
+
+>ul>li>a{
+	text-decoration: none;
+	color: white;
+	font-size: 24px;
+}
+
+}

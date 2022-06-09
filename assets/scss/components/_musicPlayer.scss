@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+
+
+.music-player__container {
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
+  display: flex;
+  position: fixed;
+  padding: 20px 30px;
+  margin:0;
+  left:0px;
+  bottom:0px;
+  z-index: 10;
+}
+
+
+// 光碟會跑版:)
+.music-player__img-container {
+  position: relative;
+  width: 110px;
+}
+
+.music-player__img-container::after {
+  content: '';
+  background-color: #ffffff;
+  box-shadow: 0 20px 20px 0 rgba(250, 246, 246, 0.6);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translate(-35%, -50%);
+}
+
+.music-player__img-container img {
+  /* inherit 繼承父層屬性，此處為繼承父層寬度 */
+  width: inherit;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  animation: rotate 4.5s linear infinite;
+  animation-play-state: paused;
+}
+
+.music-player__container.play .musice-player__img-container img {
+  animation-play-state: running;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.music-player__navigation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  z-index: 1;
+}
+
+.music-player__action-btn-prev{
+  // transparent background透明
+  background-color: transparent;
+  border: 0;
+  color: #191719;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 10px 0 25px;
+}
+
+.music-player__action-btn__action-btn-big{
+  background-color: transparent;
+  border: 0;
+  color: #191719;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.music-player__action-btn-next{
+  background-color: transparent;
+  border: 0;
+  color: #191719;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+
+.music-player__action-btn-random{
+  background-color:transparent;
+  border:0;
+  color:#191719;
+  font-size:20px;
+  cursor: pointer;
+  padding:10px;
+  margin: 0 10px;
+
+}
+
+.music-player__action-btn-loop{
+  background-color: transparent;
+  border:0;
+  color:#191719;
+  font-size:20px;
+  cursor: pointer;
+  padding:10px;
+  margin: 0 10px;
+
+}
+
+.music-player__progress-container{
+  background: #797979;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 10px;
+  height: 4px;
+  width: 100%;
+}
+
+.music-player__progress {
+  background-color: #ed4444;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+
+
+.music-player__info{
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #191719;
+  text-align: left;
+  top: 0;
+  width: 100%;
+  padding: 10px 10px 10px 0px;
+  opacity: 1;
+  z-index: 0;
+
+  h4{
+    margin:0px
+
+}
+}
+
+.music-player__action-btn-list{
+  background-color: transparent;
+  border:0;
+  color:#191719;
+  font-size:20px;
+  cursor: pointer;
+  padding:10px;
+  margin: 0 10px;
+
+}

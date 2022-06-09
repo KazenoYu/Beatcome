@@ -1,0 +1,73 @@
+header{
+	z-index: 0px;
+	margin:50px 0px;
+	height: 1000px;
+	width: 100%;
+}
+
+#carouselExampleFade{
+	width: 1300px;
+	height:1000px;
+	position: absolute;
+	right: 0px;
+	top:250px;
+	z-index: 0;
+}
+
+.span__div{
+	display: block;
+	width:1000px;
+	height: 1000	px;
+}
+
+.span__leftarrow{
+	display :inline-block;
+	position: relative;
+	width: 28px;
+	height: 28px;
+	top:100px;
+	left:1000px;
+	margin-right: 20px;
+	z-index: 100px;
+	padding:100px;
+}
+
+
+.span__leftarrow::after{
+	display: inline-block;
+	content: " ";
+	height: 26px;
+	width: 26px;
+	border-width: 3px 3px 0 0;
+	border-color: #ffffff;
+	border-style: solid;
+	transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+	position: absolute;
+	top: 50%;
+	left: 150px;
+}
+
+.carousel-control-prev-icon{
+	position: absolute;
+	top:350px;
+	left:0%;
+	max-height: 600px;
+}
+
+.carousel-control-next-icon{
+	position: absolute;
+	top: 350px;
+	right:0%;
+	max-height: 600px;
+}
+
+.colorChange__text{
+	font-family: 'Roboto', sans-serif;
+	position: absolute;
+	height:200px;
+	width: 10%;
+	right: 0px;
+	top:880px;
+	font-size: 48px;
+	color: white;
+}
