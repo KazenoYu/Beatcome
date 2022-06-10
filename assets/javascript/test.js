@@ -72,9 +72,15 @@ var fileListsVocal = [
     type: 'Vocal',
   },
   {
-    name: 'Delirowe-Good Enough',
-    fileUrl: 'assets/music/vocal/Delirowe-Good Enough',
-    fileImg: 'assets/image/vocal_image/Delirowe-Good Enough.jpg',
+    name: 'FancyMoon-Forever Friends',
+    fileUrl: 'assets/music/vocal/FancyMoon-Forever Friends',
+    fileImg: 'assets/image/vocal_image/FancyMoon-Forever Friends',
+    type: 'Vocal',
+  },
+  {
+    name: 'Jennifer Logue-Black and Blue',
+    fileUrl: 'assets/music/vocal/Jennifer Logue-Black and Blue',
+    fileImg: 'assets/image/vocal_image/Jennifer Logue-Black and Blue',
     type: 'Vocal',
   },
 ];
