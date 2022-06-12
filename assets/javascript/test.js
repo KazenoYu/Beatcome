@@ -83,4 +83,29 @@ var fileListsVocal = [
     fileImg: 'assets/image/vocal_image/Jennifer Logue-Black and Blue',
     type: 'Vocal',
   },
+  {
+    name: 'Jon Worthy-She_s Alright',
+    fileUrl: 'assets/music/vocal/Jon Worthy-She_s Alright',
+    fileImg: 'assets/image/vocal_image/Jon Worthy-She_s Alright',
+    type: 'Vocal',
+  },
+  {
+    name: 'Jon Worthy-Who I Am',
+    fileUrl: 'assets/music/vocal/Jon Worthy-Who I Am',
+    fileImg: 'assets/image/vocal_image/Jon Worthy-Who I Am',
+    type: 'Vocal',
+  },
+  {
+    name: 'Josh Woodward-Castles-Blowing Going Gone',
+    fileUrl: 'assets/music/vocal/Josh Woodward-Castles-Blowing Going Gone',
+    fileImg:
+      'assets/image/vocal_image/Josh Woodward-Castles-Blowing Going Gone',
+    type: 'Vocal',
+  },
+  {
+    name: 'Jon Worthy-Who I Am',
+    fileUrl: 'assets/music/vocal/Jon Worthy-Who I Am',
+    fileImg: 'assets/image/vocal_image/Jon Worthy-Who I Am',
+    type: 'Vocal',
+  },
 ];

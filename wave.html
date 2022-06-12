@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      $color_background: #000;
+      $item_count: 50;
+
+      .line {
+        display: inline-block;
+        height: 25px;
+        width: 3px;
+        margin: 0 5px;
+        background-color: #000;
+        box-shadow: 0px -50px 0px 0px rgba(255, 255, 255, 0.5),
+          0px 50px 0px 0px rgba(255, 255, 255, 0.5);
+
+        @for $i from 1 through $item_count {
+          $x: $item_count + 1;
+          $height: abs(45px - (45px / ($x / 2)) * $i);
+          $delay: abs(2.5 - (2.5 / ($x / 2)) * $i) * -1;
+          $rainbow: adjust-hue(red, ($i / $item_count) * 360);
+
+          &:nth-of-type(#{$i}) {
+            -webkit-box-shadow: 0px -50px 0px 0px rgba($rainbow, 0.5),
+              0px 50px 0px 0px rgba($rainbow, 0.5);
+            -moz-box-shadow: 0px -50px 0px 0px rgba($rainbow, 0.5),
+              0px 50px 0px 0px rgba($rainbow, 0.5);
+            box-shadow: 0px -50px 0px 0px rgba($rainbow, 0.5),
+              0px 50px 0px 0px rgba($rainbow, 0.5);
+            height: $height;
+            -webkit-animation: flow
+              2.5s
+              #{$delay}s
+              ease-in-out
+              infinite
+              alternate;
+            -moz-animation: flow 2.5s #{$delay}s ease-in-out infinite alternate;
+            -o-animation: flow 2.5s #{$delay}s ease-in-out infinite alternate;
+            animation: flow 2.5s #{$delay}s ease-in-out infinite alternate;
+          }
+        }
+      }
+
+      @keyframes flow {
+        0% {
+          -webkit-transform: scaleY(0.25);
+          -moz-transform: scaleY(0.25);
+          -o-transform: scaleY(0.25);
+          transform: scaleY(0.25);
+        }
+        50% {
+          -webkit-transform: scale(0.5, 2);
+          -moz-transform: scale(0.5, 2);
+          -o-transform: scale(0.5, 2);
+          transform: scale(0.5, 2);
+        }
+        100% {
+          -webkit-transform: scaleY(0.25);
+          -moz-transform: scaleY(0.25);
+          -o-transform: scaleY(0.25);
+          transform: scaleY(0.25);
+        }
+      }
+
+      //
+      // Default page styles
+      //
+
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: none;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        display: block;
+        height: 100vh;
+        width: 100vw;
+        background-color: $color_background;
+        background: linear-gradient(#1f1f21, $color_background);
+      }
+
+      .main {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    - var n = 50; .main while n > 0 -n-- .line
+  </body>
+</html>
