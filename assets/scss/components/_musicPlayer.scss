@@ -5,7 +5,7 @@
 .music-player__container {
   font-family: 'Lato', sans-serif;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #c1c1c1;
   box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
   display: flex;
   position: fixed;
@@ -25,7 +25,7 @@
 
 .music-player__img-container::after {
   content: '';
-  background-color: #ffffff;
+  background-color: #c1c1c1;
   box-shadow: 0 20px 20px 0 rgba(250, 246, 246, 0.6);
   border-radius: 50%;
   position: absolute;
@@ -145,7 +145,7 @@
 
 
 .music-player__info{
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #c1c1c1(255, 255, 255, 0.5);
   color: #191719;
   text-align: left;
   top: 0;

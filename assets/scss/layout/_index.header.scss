@@ -27,24 +27,20 @@ header{
 	color: white;
 }
 
-// .span__div{
-// 	width:1000px;
-// 	height: 1000px;
-// 	right: 0px;
-// 	top:250px;
-// }
 
-// .span__leftarrow{
-// 	display :inline-block;
-// 	position: relative;
-// 	width: 28px;
-// 	height: 28px;
-// 	top:100px;
-// 	left:1000px;
-// 	margin-right: 20px;
-// 	z-index: 100px;
-// 	padding:100px;
-// }
+.span__leftarrow{
+	display :inline-block;
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	top:100px;
+	left:0px;
+
+	margin-right: 20px;
+	z-index: 100px;
+	padding:100px;
+	color: aliceblue;
+}
 
 
 // .span__leftarrow::after{

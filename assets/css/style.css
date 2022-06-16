@@ -219,6 +219,19 @@ header {
   color: white;
 }
 
+.span__leftarrow {
+  display: inline-block;
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 100px;
+  left: 0px;
+  margin-right: 20px;
+  z-index: 100px;
+  padding: 100px;
+  color: aliceblue;
+}
+
 .carousel-control-prev-icon {
   position: absolute;
   top: 350px;
@@ -299,50 +312,45 @@ canvas > nav > ul:hover {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  font-family: 'Noto Serif TC', serif;
 }
 
-.QA > h1 {
+h1 {
   font-size: 36px;
+  font-weight: bold;
+  margin: 30px;
+}
+
+.drawler_outer {
+  padding: 5px;
+  border: 1px solid #ffffff;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.drawler_title {
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 18px;
   font-weight: bold;
 }
 
-.QA__collapse {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  width: 500px;
+.drawler_content {
+  overflow: hidden;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  height: 0;
 }
 
-.collapse__T-box {
-  border: 1px solid #ffffff;
-  border-radius: 10px;
-  padding: 24px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
+.drawler_contentHeight {
+  border-top: 1px solid;
 }
 
-.collapse__icon {
-  position: absolute;
-  right: 12px;
-}
-
-.collapse__icon > span {
+span {
   display: block;
   width: 12px;
-  height: 1px;
+  height: 2px;
   background-color: #ffffff;
   -webkit-transition: -webkit-transform .2 ease;
   transition: -webkit-transform .2 ease;
@@ -350,7 +358,7 @@ canvas > nav > ul:hover {
   transition: transform .2 ease, -webkit-transform .2 ease;
 }
 
-.collapse__icon > span:last-of-type {
+span:last-of-type {
   -webkit-transform: rotate(90deg) translate(-2px);
           transform: rotate(90deg) translate(-2px);
 }
@@ -365,42 +373,10 @@ canvas > nav > ul:hover {
           transform: rotate(0) translateY(-2px);
 }
 
-.collapse__C-box {
-  border: 1px solid #ffffff;
-  border-radius: 20px;
-  padding: 12px;
-  margin-bottom: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  overflow: hidden;
-  border-top: none;
-  border-bottom: none;
-  -webkit-transition: height .3s ease;
-  transition: height .3s ease;
-}
-
-.collapse__content {
-  padding: 12px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.collapse:last-of-type .collapse__C-box {
-  border-bottom: 1px  solid #ffffff;
-}
-
 .music-player__container {
   font-family: 'Lato', sans-serif;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #c1c1c1;
   -webkit-box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
           box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
   display: -webkit-box;
@@ -421,7 +397,7 @@ canvas > nav > ul:hover {
 
 .music-player__img-container::after {
   content: '';
-  background-color: #ffffff;
+  background-color: #c1c1c1;
   -webkit-box-shadow: 0 20px 20px 0 rgba(250, 246, 246, 0.6);
           box-shadow: 0 20px 20px 0 rgba(250, 246, 246, 0.6);
   border-radius: 50%;
@@ -560,7 +536,7 @@ canvas > nav > ul:hover {
 }
 
 .music-player__info {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #c1c1c1 255, 255, 255, 0.5;
   color: #191719;
   text-align: left;
   top: 0;
