@@ -147,6 +147,14 @@ body {
   text-align: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,6 +192,10 @@ body {
   text-decoration: none;
   color: white;
   font-size: 24px;
+}
+
+.datalist {
+  padding: 48 px;
 }
 
 header {
@@ -282,7 +294,7 @@ h1 {
 }
 
 .marquee {
-  background-image: url("../image/background_image/bg-recommend.svg");
+  background-image: url("../image/background_image/bg_waveline.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -327,7 +339,7 @@ canvas > nav > ul:hover {
   background-color: #c1c1c1;
   background-image: url("../image/background_image/bg-QA.svg");
   background-repeat: no-repeat;
-  background-position: bottom 75%;
+  background-position: bottom 35%;
   background-size: cover;
   height: 100vh;
 }
@@ -431,6 +443,25 @@ span:last-of-type {
     padding: 0px;
     margin: 24px;
   }
+}
+
+.movedot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  font-size: 80px;
+  margin: 48px;
+  bottom: 200px;
+  text-decoration: none;
 }
 
 .music-player__container {
