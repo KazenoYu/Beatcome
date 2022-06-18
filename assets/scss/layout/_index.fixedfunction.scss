@@ -4,9 +4,18 @@
 	align-items: center;
 	flex-direction: column;
 	color: white;
-	font-size: 80px;
-	margin: 48px;
+	padding: 24px;
+	margin: 80px;
 	bottom:  200px;
-
 	text-decoration:none;
+	z-index: 100;
+}
+
+.dot{
+	height: 25px;
+  width: 25px;
+  background-color: #c1c1c1;
+  border-radius: 50%;
+  display: inline-block;
+	margin:12px ;
 }
