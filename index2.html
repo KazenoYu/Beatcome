@@ -41,7 +41,7 @@
         <li><a href="#">音樂商城</a></li>
         <li><a href="#">詞曲交流</a></li>
         <li><a href="#">常見問題</a></li>
-        <li><a href="#">聯絡我們</a></li>
+        <li><a href="#contect">聯絡我們</a></li>
         <li><a href="#">登入</a></li>
       </ul>
     </nav>
@@ -99,11 +99,11 @@
       <div class="colorChange__text">Beat</div>
     </header>
     <main>
-      <h1>
-        品牌<br />
-        故事
-      </h1>
-      <article>
+      <div class="main__title">
+      <h1>品牌故事</h1>
+      <h2>Brand Story</h2>
+    </div>
+    <article>
         Beatcome 直譯為「節奏來了」，另取Become的諧音，也有「成為節奏」意思。<br />
         節奏來了，成為節奏。 如同我們品牌的名字，我們視音樂為我們的血脈。<br />
         每一個音樂製作人的細胞，將持續分裂脈動的能量。<br />
@@ -112,42 +112,44 @@
       </article>
     </main>
 
-    <nav>
-      <ul>
-        <li>
-          <img
-            src="assets/image/beat_image/Anthem of Rain - Leave The Country.png"
-            alt="Anthem of Rain - Leave The Country"
-          />
-        </li>
-        <li>
-          <img
-            src="assets/image/beat_image/Audiobinger - Phony Luv.jpg.png"
-            alt="Audiobinger - Phony Luv.jpg.png"
-          />
-        </li>
-        <li>
-          <img
-            src="assets/image/beat_image/Audiobinger - The Journey.png"
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            src="assets/image/beat_image/04-Rocky Marsiano - Baile Dos Poucos.png"
-            alt=""
-          />
-        </li>
-        <li>
-          <img src="assets/image/beat_image/05-Ketsa - Lala.png" alt="" />
-        </li>
-        <li>
-          <img
-            src="assets/image/beat_image/06-Makaih Beats - OnlyOne.png"
-            alt=""
-          />
-        </li>
-      </ul>
+    <nav class="marquee">
+      <marquee  onMouseOver="this.stop()" onMouseOut="this.start()" height="50" direction="up" scrolldelay="4" scrollamount="1>
+        <ul>
+          <li>
+            <img
+              src="assets/image/beat_image/Anthem of Rain - Leave The Country.png"
+              alt="Anthem of Rain - Leave The Country"
+            />
+          </li>
+          <li>
+            <img
+              src="assets/image/beat_image/Audiobinger - Phony Luv.jpg.png"
+              alt="Audiobinger - Phony Luv.jpg.png"
+            />
+          </li>
+          <li>
+            <img
+              src="assets/image/beat_image/Audiobinger - The Journey.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="assets/image/beat_image/04-Rocky Marsiano - Baile Dos Poucos.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img src="assets/image/beat_image/05-Ketsa - Lala.png" alt="" />
+          </li>
+          <li>
+            <img
+              src="assets/image/beat_image/06-Makaih Beats - OnlyOne.png"
+              alt=""
+            />
+          </li>
+        </ul>
+      </marquee>
     </nav>
 
     <article class="QA">
@@ -222,13 +224,24 @@
           </div>
         </div>
       </div>
+      <footer class="contect">
+        <a href=""
+          ><img src="assets/image/icon_footer/Facebook.svg" alt="Facebook"
+        /></a>
+        <a href=""
+          ><img src="assets/image/icon_footer/Instagram.svg" alt="Instagram"
+        /></a>
+        <a href=""
+          ><img src="assets/image/icon_footer/Twitter.svg" alt="Twitter"
+        /></a>
+        <a href=""
+          ><img src="assets/image/icon_footer/mail.svg" alt="Email"
+        /></a>
+        <div><p>BEATCOME All Rights Reserved.</p></div>
+      </footer>
     </article>
 
-    <footer class="contect">
-      <a href=""><img src="" alt="" /></a>
-    </footer>
-
-    <footer class="music-player__footer">
+    <footer class="music -player__footer">
       <div class="music-player__container" id="music-player__container">
         <audio id="audio">
           <!-- source 讓音樂可以從函數庫中抓取 -->

@@ -1,21 +1,25 @@
 main{
-	display: block;
+	display: flex;
 	width: 80%;
-	height: 800px;
+	height: 100vh;
 	margin: 25px 10% ;
 	font-size: 36px;
 	line-height: 36px;
 	font-family: 'Roboto', sans-serif;
 	justify-content: center;
 	align-items: center;
+
 }
 
+.main__title{
+	top: 0px;
+}
 h1{
 	line-height: 40px;
 }
 
 article{
-	display: block;
+
 	width: 100%;
 	height: 800px;
 	margin: 25px;

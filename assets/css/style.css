@@ -247,9 +247,11 @@ header {
 }
 
 main {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 80%;
-  height: 800px;
+  height: 100vh;
   margin: 25px 10%;
   font-size: 36px;
   line-height: 36px;
@@ -262,12 +264,15 @@ main {
           align-items: center;
 }
 
+.main__title {
+  top: 0px;
+}
+
 h1 {
   line-height: 40px;
 }
 
 article {
-  display: block;
   width: 100%;
   height: 800px;
   margin: 25px;
@@ -276,10 +281,14 @@ article {
   font-family: 'Roboto', sans-serif;
 }
 
-canvas {
+.marquee {
+  background-image: url("../image/background_image/bg-recommend.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: block;
   width: 100%;
-  height: 510px;
+  height: 100vw;
   margin: 25px;
 }
 
@@ -312,21 +321,26 @@ canvas > nav > ul:hover {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  background-color: #c1c1c1;
+  background-image: url("../image/background_image/bg-QA.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 50%;
+  background-size: cover;
+  height: 100vh;
 }
 
-h1 {
+.QA > h1 {
   font-size: 36px;
   font-weight: bold;
-  margin: 30px;
+  padding: 100px 0px 80px 0px;
 }
 
 .drawler_outer {
-  padding: 5px;
   border: 1px solid #ffffff;
   width: 60%;
   margin: 0 auto;
   border-radius: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 
 .drawler_title {
@@ -371,6 +385,49 @@ span:last-of-type {
 .collapse__T-box.active .collapse__icon span:last-of-type {
   -webkit-transform: rotate(0) translateY(-2px);
           transform: rotate(0) translateY(-2px);
+}
+
+@media screen and (max-width: 1280px) {
+  .QA > h1 {
+    padding: 50px;
+  }
+  .drawler_outer {
+    margin-bottom: 20px;
+  }
+}
+
+.contect {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 200px;
+  padding: 120px;
+}
+
+.contect > a {
+  padding: 12px;
+}
+
+.contect > div {
+  padding: 24px;
+}
+
+@media screen and (max-width: 1280) {
+  .contect {
+    height: 100px;
+    padding: 60px;
+  }
+  .contect > a {
+    padding: 0px;
+  }
+  .contect > div {
+    padding: 0px;
+    margin: 24px;
+  }
 }
 
 .music-player__container {

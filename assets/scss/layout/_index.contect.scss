@@ -1,0 +1,29 @@
+.contect{
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 200px;
+	padding: 120px;
+
+>a{
+	padding: 12px;
+}
+>div{
+	padding: 24px;
+
+}
+}
+
+@media screen and (max-width:1280) {
+	.contect{
+	height: 100px;
+	padding:60px;
+	>a{
+		padding: 0px;
+	}
+	>div{
+		padding: 0px;
+		margin: 24px;
+	}
+}
+}
