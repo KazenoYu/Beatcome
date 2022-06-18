@@ -1,10 +1,19 @@
 class AudioMain {
-  constructor(el_audio, el_source, audioObjList, cycle = false, playNb = 0, playCallback=null, pauseCallback=null, endCallback=null) {
+  constructor(
+    el_audio,
+    el_source,
+    audioObjList,
+    cycle = false,
+    playNb = 0,
+    playCallback = null,
+    pauseCallback = null,
+    endCallback = null,
+  ) {
     this.el_audio = el_audio;
     this.el_source = el_source;
     this.audioObjList = audioObjList;
     this.audioList = [];
-    this.playingVideoCtn = playNb; //- 現在播到第幾首    
+    this.playingVideoCtn = playNb; //- 現在播到第幾首
     this.isCycle = cycle; //- 重複播放
     this.isPlaying = false; //- audio是否播放當中
     if (audioObjList.length > 0) {
@@ -18,21 +27,23 @@ class AudioMain {
         //- 要循環播放
         tThis.playAudioNext();
       }
-      if(endCallback)endCallback();
+      if (endCallback) endCallback();
     });
-    this.el_audio.addEventListener("play",function () {
+    this.el_audio.addEventListener('play', function () {
       console.log('play!!!');
       tThis.isPlaying = true;
-      if(playCallback)playCallback(tThis.audioObjList[tThis.playingVideoCtn]);
+      if (playCallback) playCallback(tThis.audioObjList[tThis.playingVideoCtn]);
     });
-    this.el_audio.addEventListener("pause",function () {
+    this.el_audio.addEventListener('pause', function () {
       console.log('pause!!!');
       tThis.isPlaying = false;
-      if(pauseCallback)pauseCallback(tThis.audioObjList[tThis.playingVideoCtn]);
+      if (pauseCallback)
+        pauseCallback(tThis.audioObjList[tThis.playingVideoCtn]);
     });
   }
-  setListObjectParse(paramObj){ //- 
-    const videoUrlLists = paramObj.map(e => e.fileUrl);
+  setListObjectParse(paramObj) {
+    //-
+    const videoUrlLists = paramObj.map((e) => e.fileUrl);
     this.setList(videoUrlLists);
   }
   addList(value) {
@@ -55,7 +66,6 @@ class AudioMain {
     // this.el_audio.autoplay = true;
     this.el_audio.load();
     this.el_audio.play();
-    
   }
   playAudioNext() {
     //- 播放 下一首
@@ -90,7 +100,7 @@ class AudioMain {
     //- 移除第N首 音樂
     if (number < 0 || number > this.audioList.length - 1) return;
     if (number <= this.playingVideoCtn) {
-      //- 切掉的那一首音樂是 撥放中 或 撥放中之前 > 現在撥放中參數-1 (避免自動撥放下一手造成錯亂)
+      //- 切掉的那一首音樂是 撥放中 或 撥放中之前 > 現在撥放中參數-1 (避免自動撥放下一首造成錯亂)
       this.playingVideoCtn -= 1;
     }
     this.audioList.splice(number, 1); //- 切掉那一筆
