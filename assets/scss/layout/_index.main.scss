@@ -8,14 +8,24 @@ main{
 	font-family: 'Roboto', sans-serif;
 	justify-content: center;
 	align-items: center;
+	flex-direction: row;
+	background-image: url("../image/background_image/BC LOGO.svg");
+	background-repeat: no-repeat;
+
 
 }
 
 .main__title{
-	top: 0px;
+	width: 80%;
+	height: 100%;
+	text-align: start;
+	justify-content: center;
+
 }
 h1{
-	line-height: 40px;
+	line-height: 60px;
+	font-size: 48px;
+	font-weight: bold;
 }
 
 .main__article{
@@ -26,4 +36,6 @@ h1{
 	font-size: 24px;
 	line-height: 36px;
 	font-family: 'Roboto', sans-serif;
+	font-weight:500;
+
 }
