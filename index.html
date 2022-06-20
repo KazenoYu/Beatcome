@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Beatcome</title>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -24,12 +24,17 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <section id="section01"></section>
     <nav class="navbar">
       <a class="navbar__logo" href="index.html"
+
         ><img src="assets/image/logo1.png" width="150" alt="LOGO"
       /></a>
       <ul>
-        <input type="text" list="datalistOptions" />
+
+        <input class="search__input" type="text">
+        <img src="assets/image/icon_index/search.svg" alt="">
+        <!-- <input type="text" list="datalistOptions" />
         <datalist id="datalistOptions">
           <option value="Audiobinger">Audiobinger</option>
           <option value=""></option>
@@ -37,7 +42,7 @@
           <option value=""></option>
           <option value=""></option>
           <option value=""></option>
-        </datalist>
+        </datalist> -->
         <li><a href="#">音樂商城</a></li>
         <li><a href="#">詞曲交流</a></li>
         <li><a href="#section04">常見問題</a></li>
@@ -45,6 +50,7 @@
         <li><a href="#">登入</a></li>
       </ul>
     </nav>
+
     <ul class="movedot">
       <li><a href="#section01" class="dot"></a></li>
       <li><a href="#section02" class="dot"></a></li>
@@ -71,13 +77,18 @@
       </a>
     </aside> -->
     <header class="header">
-      <section id="section01"></section>
       <!-- <span class="span__leftarrow"> </span> -->
+      <div class="button__position">
+      <button class="Next_btn" onclick="musicTypeNext()"><img src="assets/image/icon_index/arrow-left.svg" alt="Next"></button>
+      <button class="Prev_btn" onclick="musicTypePrev()"><img src="assets/image/icon_index/arrow-right.svg" alt="Prev"></button>
+    </div>
+      <div class="colorChange__text">Beat</div>
       <div
         id="carouselExampleFade"
         class="carousel slide carousel-fade"
         data-bs-ride="carousel"
       >
+
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
@@ -99,43 +110,43 @@
               class="d-block w-100"
               alt="..."
             />
+          </div>
             <div class="carousel-item">
               <img
                 src="assets/image/index_carousel/vocal-sparrow.jpg"
                 class="d-block w-100"
                 alt="..."
               />
+            </div>
               <div class="carousel-item">
                 <img
                   src="assets/image/index_carousel/vocal-zebraisland.png"
                   class="d-block w-100"
                   alt="..."
                 />
+              </div>
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
           </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleFade"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleFade"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-      <div class="colorChange__text">Beat</div>
     </header>
+    <section id="section02"></section>
     <main>
-      <section id="section02"></section>
+
       <div class="main__title">
       <h1>品牌故事</h1>
       <h2>Brand Story</h2>
@@ -194,6 +205,17 @@
       </marquee>
     </nav>
 
+    <nav>
+      <ul>
+        <li><img src="assets/image/beat_image/Anthem of Rain - Leave The Country.png" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+      </ul>
+    </nav>
+
     <article class="QA">
       <section id="section04"></section>
       <h1>常見問題</h1>
@@ -227,7 +249,7 @@
       </div>
       <div class="drawler_outer">
         <div class="drawler_title">
-          <div class="collapse__icon"><span></span><span></span></div>
+          <div class="collapse__icon"><span class="QA__span"></span><span class="QA__span"></span></div>
           我是音樂製作人，要怎麼上架音樂？
         </div>
 

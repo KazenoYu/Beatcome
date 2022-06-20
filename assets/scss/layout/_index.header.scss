@@ -1,34 +1,61 @@
 header{
 	z-index: 0px;
-	margin:50px 0px;
-	height: 1000px;
+	height: 1200px;
 	width: 100%;
+ }
+
+button{
+	background-color: transparent;
+	border: none;
+	padding: 5px;
 }
 
-#carouselExampleFade{
+.button__position{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top:25%;
+	left:40%;
+}
+@media screen and(max-width:1080px) {
+	.button__position{
+		left: 30%;
+
+}
+}
+// .Next__btn{
+// 	background-color: transparent;
+//   border: 0;
+//   color: #191719;
+//   font-size: 20px;
+//   cursor: pointer;
+//   padding: 10px;
+//   margin: 0 10px 0 25px;
+// }
+
+ #carouselExampleFade{
 	width: 100vh;
 	height:100vh;
 	position: absolute;
 	right:0%;
 	top:250px;
 	z-index: 0;
-}
+ }
 
-.colorChange__text{
+ .colorChange__text{
 	font-family: 'Roboto', sans-serif;
-	position: relative;
-	justify-content: center;
-	align-items: center;
+	position: absolute;
+
 	width: 200px;
-	right: 0px;
+	left: 40%;
 	z-index: 100;
-	top: 400px;
+	bottom: 11%;
 	font-size: 48px;
 	color: white;
-}
+ }
 
 
-.span__leftarrow{
+ .span__leftarrow{
 	display :inline-block;
 	position: absolute;
 	width: 28px;
@@ -40,33 +67,47 @@ header{
 	z-index: 100px;
 	padding:100px;
 	color: aliceblue;
-}
+ }
 
 
-// .span__leftarrow::after{
-// 	display: inline-block;
-// 	content: " ";
-// 	height: 26px;
-// 	width: 26px;
-// 	border-width: 3px 3px 0 0;
-// 	border-color: #ffffff;
-// 	border-style: solid;
-// 	transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
-// 	position: absolute;
-// 	top: 50%;
-// 	left: 150px;
-// }
+ // .span__leftarrow::after{
+ //  display: inline-block;
+ //  content: " ";
+ //  height: 26px;
+ //  width: 26px;
+ //  border-width: 3px 3px 0 0;
+ //  border-color: #ffffff;
+ //  border-style: solid;
+ //  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+ //  position: absolute;
+ //  top: 50%;
+ //  left: 150px;
+ // }
 
-.carousel-control-prev-icon{
+ .carousel-control-prev-icon{
 	position: absolute;
-	top:350px;
+	top:50%;
 	left:0%;
 	max-height: 600px;
-}
+ }
 
-.carousel-control-next-icon{
+ .carousel-control-next-icon{
 	position: absolute;
-	top: 350px;
+	top: 50%;
 	right:0%;
 	max-height: 300px;
+ }
+
+.carousel-control-prev{
+	height: 920px;
+}
+
+
+.carousel-control-next{
+	height: 920px;
+}
+
+.carousel-indicators{
+
+	bottom: 0;
 }

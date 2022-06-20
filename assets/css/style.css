@@ -145,6 +145,8 @@ body {
   background-color: #121212;
   color: white;
   text-align: center;
+  -webkit-transition: background .5s linear;
+  transition: background .5s linear;
 }
 
 html {
@@ -167,7 +169,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-width: 90%;
-  padding: 8px 5%;
+  padding: 5px 5%;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
@@ -186,13 +188,21 @@ a {
 }
 
 .navbar > ul > li {
-  padding: 5px 20px;
+  padding: 0px 20px;
 }
 
 .navbar > ul > li > a {
   text-decoration: none;
   color: white;
   font-size: 24px;
+}
+
+.search__input {
+  height: 36px;
+  cursor: pointer;
+  border: 2px #c1c1c1 solid;
+  top: 20px;
+  margin: 20px;
 }
 
 .navbar a {
@@ -240,9 +250,33 @@ a {
 
 header {
   z-index: 0px;
-  margin: 50px 0px;
-  height: 1000px;
+  height: 1200px;
   width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+}
+
+.button__position {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 25%;
+  left: 40%;
+}
+
+@media screen and (max-width: 1080px) {
+  .button__position {
+    left: 30%;
+  }
 }
 
 #carouselExampleFade {
@@ -256,17 +290,11 @@ header {
 
 .colorChange__text {
   font-family: 'Roboto', sans-serif;
-  position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: absolute;
   width: 200px;
-  right: 0px;
+  left: 40%;
   z-index: 100;
-  top: 400px;
+  bottom: 11%;
   font-size: 48px;
   color: white;
 }
@@ -286,16 +314,28 @@ header {
 
 .carousel-control-prev-icon {
   position: absolute;
-  top: 350px;
+  top: 50%;
   left: 0%;
   max-height: 600px;
 }
 
 .carousel-control-next-icon {
   position: absolute;
-  top: 350px;
+  top: 50%;
   right: 0%;
   max-height: 300px;
+}
+
+.carousel-control-prev {
+  height: 920px;
+}
+
+.carousel-control-next {
+  height: 920px;
+}
+
+.carousel-indicators {
+  bottom: 0;
 }
 
 main {
@@ -430,7 +470,7 @@ canvas > nav > ul:hover {
   border-top: 1px solid;
 }
 
-span {
+.QA__span {
   display: block;
   width: 12px;
   height: 2px;
@@ -526,6 +566,10 @@ span:last-of-type {
   border-radius: 50%;
   display: inline-block;
   margin: 12px;
+}
+
+.section {
+  display: none;
 }
 
 .music-player__container {
