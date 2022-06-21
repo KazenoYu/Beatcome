@@ -1,0 +1,2035 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/otherPage.css/css/list_style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#"><img src="assets/images/logo.webp" alt="logo" /></a>
+      <ul class="navbar__list">
+        <div class="navbar__search">
+          <img src="assets/images/icon/list/search.svg" alt="search" />
+          <span></span>
+          <input
+            style="border-style: none"
+            type="text"
+            name="search"
+            placeholder="搜尋"
+          />
+        </div>
+        <li><a href="#">音樂商城</a></li>
+        <li><a href="#">詞曲交流</a></li>
+        <li><a href="#">常見問題</a></li>
+        <li><a href="#">聯絡我們</a></li>
+        <li><a href="#">登入</a></li>
+      </ul>
+    </nav>
+
+    <aside class="navbar__button">
+      <ul class="navbar__button__lines">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </aside>
+
+    <aside class="list__aside">
+      <div>
+        <img src="assets/images/logo.webp" alt="aside-logo" />
+        <p><a href="#">音樂商城</a></p>
+        <p><a href="#">詞曲交流</a></p>
+        <p><a href="#">常見問題</a></p>
+        <p><a href="#">聯絡我們</a></p>
+        <p><a href="#">登入</a></p>
+        <p class="aside__search">
+          <img src="assets/images/icon/list/search.svg" alt="aside-search" />
+          <input
+            style="border-style: none"
+            type="text"
+            name="search"
+            placeholder="搜尋"
+          />
+        </p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <article class="main__list">
+        <p class="main__list__title">音樂列表</p>
+        <section class="main__list__button">
+          <a href="#recommended__area"
+            ><span class="playlist01" onclick="playlistClickOne();"
+              >推薦音樂</span
+            ></a
+          >
+          <a href="#beat__area"
+            ><span class="playlist02" onclick="playlistClickTwo();"
+              >Beat</span
+            ></a
+          >
+          <a href="#vocal__area"
+            ><span class="playlist03" onclick="playlistClickThree();"
+              >Vocal</span
+            ></a
+          >
+          <a href="#effects__area"
+            ><span class="playlist04" onclick="playlistClickFour();"
+              >Effects</span
+            ></a
+          >
+        </section>
+      </article>
+      <article class="main__music">
+        <article id="recommended__area">
+          <span class="main__music__title">
+            <p>推薦音樂</p>
+            <span></span>
+          </span>
+
+          <article class="main__music__content">
+              <section>
+                <a href="https://www.youtube.com">
+                  <div>
+                    <img
+                      src="assets/images/Recommended/01-Rocky Marsiano - Baile Dos Poucos (1).webp"
+                      alt="picture-01"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">500</p></p>
+                      </span>
+                      <p class="song">Baile Dos Poucos</p>
+                      <p class="creator">Rocky Marsiano</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/Recommended/02-Ketsa - Lala.webp"
+                      alt="picture-02"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">550</p></p>
+                      </span>
+                      <p class="song">Lala</p>
+                      <p class="creator">Ketsa</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/Recommended/03-Shaolin Dub - Trumpets-of-Jericho.webp"
+                      alt="picture-03"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">580</p></p>
+                      </span>
+                      <p class="song">Trumpets-of-Jericho</p>
+                      <p class="creator">Shaolin Dub</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/Recommended/04.Emilyd-Worth Loving (1) (1).jpg"
+                      alt="picture-04"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">530</p></p>
+                      </span>
+                      <p class="song">Worth Loving</p>
+                      <p class="creator">Emilyd</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/Recommended/05.Paradox-The End Is Near (feat. KRUM & MELISSA CARTER).webp"
+                      alt="picture-05"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">500</p></p>
+                      </span>
+                      <p class="song">The End Is Near</p>
+                      <p class="creator">Paradox</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/Recommended/06.吃東西 (1)(1).webp"
+                      alt="picture-06"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">550</p></p>
+                      </span>
+                      <p class="song">吃東西</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/Recommended/07.定音鼓期待.webp"
+                      alt="picture-07"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">580</p></p>
+                      </span>
+                      <p class="song">定音鼓期待</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/Recommended/08.碼表倒數 (1)(1).webp"
+                      alt="picture-08"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">530</p></p>
+                      </span>
+                      <p class="song">碼表倒數</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+          </article>
+        </article>
+
+        <article id="beat__area">
+          <span class="main__music__title">
+            <p>Beat</p>
+            <span></span>
+          </span>
+
+          <article class="main__music__content">
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/beat-images/01-Anthem of Rain - Leave The Country.webp"
+                      alt="picture-01"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">500</p></p>
+                      </span>
+                      <p class="song">Leave The Country</p>
+                      <p class="creator">Anthem of Rain</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/beat-images/02-Audiobinger - Phony Luv.jpg.webp"
+                      alt="picture-02"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">550</p></p>
+                      </span>
+                      <p class="song">Phony Luv</p>
+                      <p class="creator">Audiobinger</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/beat-images/03-Audiobinger - The Journey.webp"
+                      alt="picture-03"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">580</p></p>
+                      </span>
+                      <p class="song">The Journey</p>
+                      <p class="creator">Audiobinger</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/beat-images/04-Rocky Marsiano - Baile Dos Poucos.webp"
+                      alt="picture-04"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">530</p></p>
+                      </span>
+                      <p class="song">Baile Dos Poucos</p>
+                      <p class="creator">Rocky Marsiano</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/beat-images/05-Ketsa - Lala.webp"
+                      alt="picture-05"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">500</p></p>
+                      </span>
+                      <p class="song">Lala</p>
+                      <p class="creator">Ketsa</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/beat-images/06-Makaih Beats - OnlyOne.webp"
+                      alt="picture-06"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">550</p></p>
+                      </span>
+                      <p class="song">OnlyOne</p>
+                      <p class="creator">Makaih Beats</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/beat-images/07-Makaih Beats - Permanent Damage.webp"
+                      alt="picture-07"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">580</p></p>
+                      </span>
+                      <p class="song">Permanent Damage</p>
+                      <p class="creator">Makaih Beats</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/beat-images/08-Shaolin Dub - Trumpets-of-Jericho.webp"
+                      alt="picture-08"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">530</p></p>
+                      </span>
+                      <p class="song">Trumpets-of-Jericho</p>
+                      <p class="creator">Shaolin Dub</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/beat-images/09-Rocky Marsiano - Assim E Assado (1) (1).webp"
+                      alt="picture-09"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">530</p></p>
+                      </span>
+                      <p class="song">Assim E Assado</p>
+                      <p class="creator">Rocky Marsiano</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/beat-images/10-Shaolin Dub - Settle-Scores.webp"
+                      alt="picture-10"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">500</p></p>
+                      </span>
+                      <p class="song">Settle-Scores</p>
+                      <p class="creator">Shaolin Dub</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/beat-images/11-Shaolin Dub - Dem-Wicked.webp"
+                      alt="picture-11"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">580</p></p>
+                      </span>
+                      <p class="song">Dem-Wicked</p>
+                      <p class="creator">Shaolin Dub</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/beat-images/12-Rocky Marsiano - Time To Redeem.webp"
+                      alt="picture-12"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">570</p></p>
+                      </span>
+                      <p class="song">Time To Redeem</p>
+                      <p class="creator">Rocky Marsiano</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/beat-images/13-Shaolin Dub - Temple-Life.webp"
+                      alt="picture-13"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">540</p></p>
+                      </span>
+                      <p class="song">Temple-Life</p>
+                      <p class="creator">Shaolin Dub</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/beat-images/14-Rocky Marsiano - Got Game.webp"
+                      alt="picture-14"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">500</p></p>
+                      </span>
+                      <p class="song">Got Game</p>
+                      <p class="creator">Rocky Marsiano</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/beat-images/15-kaleidoplasm - thanks for stealing my bike, jerk.webp"
+                      alt="picture-15"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">520</p></p>
+                      </span>
+                      <p class="song">thanks for stealing my bike, jerk</p>
+                      <p class="creator">kaleidoplasm</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/beat-images/16-Shaolin Dub - From-the-Beast.webp"
+                      alt="picture-16"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">560</p></p>
+                      </span>
+                      <p class="song">From-the-Beast</p>
+                      <p class="creator">Shaolin Dub</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/beat-images/17-Popoi - Dorila y Mello.webp"
+                      alt="picture-17"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">530</p></p>
+                      </span>
+                      <p class="song">Dorila y Mello</p>
+                      <p class="creator">Popoi</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/beat-images/18-Rocky Marsiano - For The MCs _ DJs (cuts by X-Acto).webp"
+                      alt="picture-18"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">590</p></p>
+                      </span>
+                      <p class="song">For The MCs _ DJs</p>
+                      <p class="creator">Rocky Marsiano</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/beat-images/19-Rocky Marsiano - Navalhas.webp"
+                      alt="picture-19"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">510</p></p>
+                      </span>
+                      <p class="song">Navalhas</p>
+                      <p class="creator">Rocky Marsiano</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/beat-images/20-dustmotes - Glass Harp.webp"
+                      alt="picture-20"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">550</p></p>
+                      </span>
+                      <p class="song">Glass Harp</p>
+                      <p class="creator">dustmotes</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+          </article>
+        </article>
+
+        <article id="vocal__area">
+          <span class="main__music__title">
+            <p>Vocal</p>
+            <span></span>
+          </span>
+
+          <article class="main__music__content">
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/vocal-images/1.Delirowe-Good Enough.webp"
+                      alt="picture-01"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">500</p></p>
+                      </span>
+                      <p class="song">Good Enough</p>
+                      <p class="creator">Delirowe</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/vocal-images/2.LawrenceTrailer-Lets Call It.webp"
+                      alt="picture-02"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">550</p></p>
+                      </span>
+                      <p class="song">Lets Call It</p>
+                      <p class="creator">LawrenceTrailer</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/vocal-images/3.Josh Woodward-Castles-Blowing Going Gone.webp"
+                      alt="picture-03"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">580</p></p>
+                      </span>
+                      <p class="song">Blowing Going Gone</p>
+                      <p class="creator">Josh Woodward</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/vocal-images/4.stan g-Pallazzine.webp"
+                      alt="picture-04"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">530</p></p>
+                      </span>
+                      <p class="song">Worth Loving</p>
+                      <p class="creator">Emilyd</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/vocal-images/5.Paradox-The End Is Near (feat. KRUM & MELISSA CARTER).webp"
+                      alt="picture-05"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">500</p></p>
+                      </span>
+                      <p class="song">The End Is Near</p>
+                      <p class="creator">Paradox</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/vocal-images/6.Josh Woodward-The Shade from Our Trees-The Maze.webp"
+                      alt="picture-06"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">550</p></p>
+                      </span>
+                      <p class="song">The Maze</p>
+                      <p class="creator">Josh Woodward</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/vocal-images/7.Josh Woodward-The Wake-Oh Mallory.webp"
+                      alt="picture-07"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">580</p></p>
+                      </span>
+                      <p class="song">Oh Mallory</p>
+                      <p class="creator">Josh Woodward</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/vocal-images/8.Emilyd-Worth Loving (1) (1).jpg"
+                      alt="picture-08"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">530</p></p>
+                      </span>
+                      <p class="song">Worth Loving</p>
+                      <p class="creator">Emilyd</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/vocal-images/9.Josh Woodward-Sunny Side Of The Street-Chainsaw.webp"
+                      alt="picture-09"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">530</p></p>
+                      </span>
+                      <p class="song">Chainsaw</p>
+                      <p class="creator">Josh Woodward</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/vocal-images/10.Jon Worthy-Who I Am.webp"
+                      alt="picture-10"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">500</p></p>
+                      </span>
+                      <p class="song">Who I Am</p>
+                      <p class="creator">Josh Worthy</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/vocal-images/11.Kamarius-Never Come Back To You.webp"
+                      alt="picture-11"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">580</p></p>
+                      </span>
+                      <p class="song">Never Come Back To You</p>
+                      <p class="creator">Kamarius</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/vocal-images/12.Jon Worthy-She's Alright.webp"
+                      alt="picture-12"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">570</p></p>
+                      </span>
+                      <p class="song">She's Alright</p>
+                      <p class="creator">Jon Worthy</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/vocal-images/13.Josh Woodward-Dirty Wings-The Vagabon.webp"
+                      alt="picture-13"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">540</p></p>
+                      </span>
+                      <p class="song">The Vagabon</p>
+                      <p class="creator">Josh Woodward</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/vocal-images/14.FancyMoon-Forever Friends.webp"
+                      alt="picture-14"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">500</p></p>
+                      </span>
+                      <p class="song">Forever Friends</p>
+                      <p class="creator">FancyMoon</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/vocal-images/15.Jennifer Logue-Black and Blue.webp"
+                      alt="picture-15"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">520</p></p>
+                      </span>
+                      <p class="song">Black and Blue</p>
+                      <p class="creator">Jennifer Logue</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/vocal-images/16.Josh Woodward-Sunny Side of the Trees-The Best Song.webp"
+                      alt="picture-16"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">560</p></p>
+                      </span>
+                      <p class="song">The Best Song</p>
+                      <p class="creator">Josh Woodward</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/vocal-images/17.Zebra Island-Not Alone.webp"
+                      alt="picture-17"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">530</p></p>
+                      </span>
+                      <p class="song">Not Alone</p>
+                      <p class="creator">Zebra Island</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/vocal-images/18.NDA-About.webp"
+                      alt="picture-18"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">590</p></p>
+                      </span>
+                      <p class="song">About</p>
+                      <p class="creator">NDA</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/vocal-images/19.Static In Veronal-The Sparrow.webp"
+                      alt="picture-19"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">510</p></p>
+                      </span>
+                      <p class="song">The Sparrow</p>
+                      <p class="creator">Static In Veronal</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/vocal-images/20.Josh Woodward-Only Whispering-East Side Bar.webp"
+                      alt="picture-20"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">550</p></p>
+                      </span>
+                      <p class="song">East Side Bar</p>
+                      <p class="creator">Josh Woodward</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+          </article>
+
+        </article>
+        <article id="effects__area">
+          <span class="main__music__title">
+            <p>Effects</p>
+            <span></span>
+          </span>
+
+          <article class="main__music__content">
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/effects-images/1.button.webp"
+                      alt="picture-01"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">500</p></p>
+                      </span>
+                      <p class="song">Button</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/effects-images/2.punch.webp"
+                      alt="picture-02"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">550</p></p>
+                      </span>
+                      <p class="song">Punch</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/effects-images/3.火車汽笛.webp"
+                      alt="picture-03"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">580</p></p>
+                      </span>
+                      <p class="song">火車汽笛</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/effects-images/4.失敗.webp"
+                      alt="picture-04"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">530</p></p>
+                      </span>
+                      <p class="song">失敗</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/effects-images/5.吃東西 (1)(1).webp"
+                      alt="picture-05"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">500</p></p>
+                      </span>
+                      <p class="song">吃東西</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/effects-images/6.定音鼓期待.webp"
+                      alt="picture-06"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">550</p></p>
+                      </span>
+                      <p class="song">定音鼓期待</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/effects-images/7.泡泡.webp"
+                      alt="picture-07"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">580</p></p>
+                      </span>
+                      <p class="song">泡泡</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/effects-images/8.風.webp"
+                      alt="picture-08"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">530</p></p>
+                      </span>
+                      <p class="song">風</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/effects-images/9.倒水.webp"
+                      alt="picture-09"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">530</p></p>
+                      </span>
+                      <p class="song">倒水</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/effects-images/10.時鐘.webp"
+                      alt="picture-10"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">500</p></p>
+                      </span>
+                      <p class="song">時鐘</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/effects-images/11.神秘.webp"
+                      alt="picture-11"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">580</p></p>
+                      </span>
+                      <p class="song">神秘</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/effects-images/12.神聖.webp"
+                      alt="picture-12"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">570</p></p>
+                      </span>
+                      <p class="song">神聖</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/effects-images/13.閃亮.webp"
+                      alt="picture-13"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">540</p></p>
+                      </span>
+                      <p class="song">閃亮</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/effects-images/14.探頭.webp"
+                      alt="picture-14"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">500</p></p>
+                      </span>
+                      <p class="song">探頭</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/effects-images/15.喇叭達陣.webp"
+                      alt="picture-15"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">520</p></p>
+                      </span>
+                      <p class="song">喇叭達陣</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/effects-images/16.悲慘.webp"
+                      alt="picture-16"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">560</p></p>
+                      </span>
+                      <p class="song">悲慘</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/effects-images/17.結帳.webp"
+                      alt="picture-17"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">530</p></p>
+                      </span>
+                      <p class="song">結帳</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/effects-images/18.鼓.webp"
+                      alt="picture-18"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">590</p></p>
+                      </span>
+                      <p class="song">鼓</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/effects-images/19.賓果.webp"
+                      alt="picture-19"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">510</p></p>
+                      </span>
+                      <p class="song">賓果</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+
+              <section>
+                <a href="">
+                  <div>
+                    <img
+                      src="assets/images/effects-images/20.碼表倒數 (1)(1).webp"
+                      alt="picture-20"
+                    />
+                    <span class="main__music__content__text">
+                      <span>
+                        <p>NTD<p class="price">550</p></p>
+                      </span>
+                      <p class="song">碼表倒數</p>
+                      <p class="creator">音效</p>
+                    </span>
+                  </div>
+                </a>
+                  <span class="main__music__content__btn">
+                    <img
+                      src="assets/images/icon/list/play_gray.svg"
+                      alt="playIcon"
+                    />
+                    <img
+                      src="assets/images/icon/list/add_cart.svg"
+                      alt="shopping-cart"
+                    />
+                  </span>
+              </section>
+          </article>
+        </article>
+      </article>
+    </main>
+
+    <footer class="footer"></footer>
+  </body>
+
+  <script src="assets/javascript/list_navbar_javascript.js"></script>
+  <script src="assets/javascript/list_main_javascript.js"></script>
+</html>
