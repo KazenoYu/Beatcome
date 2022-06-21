@@ -15,7 +15,7 @@ button{
 	display: flex;
 	flex-direction: column;
 	top:25%;
-	left:40%;
+	left:45%;
 }
 @media screen and(max-width:1080px) {
 	.button__position{
@@ -86,6 +86,7 @@ button{
 
  .carousel-control-prev-icon{
 	position: absolute;
+	opacity: 0;
 	top:50%;
 	left:0%;
 	max-height: 600px;
@@ -93,6 +94,7 @@ button{
 
  .carousel-control-next-icon{
 	position: absolute;
+	opacity: 0;
 	top: 50%;
 	right:0%;
 	max-height: 300px;

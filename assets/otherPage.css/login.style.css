@@ -1,0 +1,304 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  width: 80%;
+  margin: 2% 10%;
+  height: 100vh;
+  background-color: #121212;
+}
+
+.navbar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.navbar__link {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.navbar__link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  padding-bottom: 3px;
+  margin-left: 1rem;
+  color: white;
+  border-bottom: 1px solid white transparent;
+}
+
+.navbar__link a:hover {
+  border-bottom: 1px solid white;
+}
+
+.main {
+  width: auto;
+  height: 80vh;
+  background-image: url('../images/會員登入.jpg');
+  background-position: center top;
+  background-color: #121212;
+  color: white;
+}
+
+.main-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-title h1 {
+  font-size: xx-large;
+  text-align: center;
+  margin-top: 130px;
+  margin-bottom: 100px;
+}
+
+.main-title button {
+  background-color: #494949;
+  width: 50%;
+}
+
+.main-title button p {
+  font-size: x-large;
+  color: white;
+}
+
+.main-title button:hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.main-input-text,
+.main-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.main-input-text span,
+.main-btn span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.main-input-text span p,
+.main-btn span p {
+  font-size: x-large;
+  margin-right: 20px;
+}
+
+.main-input-text span hr,
+.main-btn span hr {
+  height: 30px;
+  width: 1px;
+  border-width: 0;
+  color: gray;
+  background-color: gray;
+  margin-right: 20px;
+}
+
+.main-input-text input,
+.main-btn input {
+  background: none;
+  border: none;
+  font-size: large;
+  width: 150px;
+  color: white;
+}
+
+.main-input {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.main-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.main-add a {
+  color: #868686;
+  text-decoration: none;
+  border-bottom: 1px solid #868686;
+  margin-left: 20px;
+}
+/*# sourceMappingURL=login.style.css.map */
