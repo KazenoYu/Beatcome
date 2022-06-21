@@ -1,17 +1,19 @@
+
+.recommend__music{
+	background-image:url("../image/background_image/waveline.svg") ;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: cover;
+	margin: 8% 0;
+}
+
 .recommend{
-
-
 	width: 1920px;
 	height: 320px;
 	overflow:hidden;
 	display: flex;
-
-
-
-
-
 	>ul {
-
+		background-color: none;
 		left: 0%;
 		width: 100%;
 		height: 100%;
