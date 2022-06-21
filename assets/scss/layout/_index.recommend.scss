@@ -1,0 +1,69 @@
+.recommend{
+
+
+	width: 1920px;
+	height: 320px;
+	overflow:hidden;
+	display: flex;
+
+
+
+
+
+	>ul {
+
+		left: 0%;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		// animation: picmove 5s linear infinite forwards;
+	}
+	>ul>li{
+		margin: 10px;
+	}
+
+	>ul:hover{
+		animation-play-state: paused;
+	}
+
+	@keyframes picmove{
+		from{
+			transform: translate(0);
+		}
+		to{
+			transform: translate(-750px);
+		}
+		}
+
+
+}
+
+.recommend__beat{
+	z-index: 100px;
+	transform: translate(-150px);
+	overflow: hidden;
+}
+
+
+.recommend__vocal{
+	z-index: 100px;
+	transform: translate(-50px);
+}
+
+.recommend__effects{
+	z-index: 100px;
+	transform: translate(-180px);
+}
+
+.recommend__text{
+	font-family: 'Roboto', sans-serif;
+	font-size: 48px;
+	font-weight: bold;
+	line-height: 60px;
+	position: absolute;
+	right: 10%;
+	align-items: center;
+
+}

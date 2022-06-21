@@ -33,15 +33,7 @@
       <ul>
         <input class="search__input" type="text">
         <img src="assets/image/icon_index/search.svg" alt="">
-        <!-- <input type="text" list="datalistOptions" />
-        <datalist id="datalistOptions">
-          <option value="Audiobinger">Audiobinger</option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-        </datalist> -->
+
         <li><a href="#">音樂商城</a></li>
         <li><a href="#">詞曲交流</a></li>
         <li><a href="#section04">常見問題</a></li>
@@ -56,27 +48,16 @@
       <li><a href="#section03" class="dot"></a></li>
       <li><a href="#section04" class="dot"></a></li>
     </ul>
-    <!-- <aside class="aside">
-      <section class="aside__menu">
-        <span></span><span></span><span></span>
-      </section>
-      <section class="aside__container">
-        <a href="index.html">首頁</a>
-        <a href="demo_01.html">展示一</a>
-        <a href="demo_02.html">展示二</a>
-        <a href="demo_03.html">展示三</a>
-        <a href="demo_04.html">展示四</a>
-      </section>
+   <aside class="aside__goTop">
       <a class="aside__top" href="#GOTOP">
         <img
-          src="assets/images/robot.png"
+          src="assets/image/icon_index/goTop.svg"
           class="tooltip"
-          alt="機器人說到最上面"
+          alt="GOTOP"
         />
       </a>
-    </aside> -->
+   </aside>
     <header class="header">
-      <!-- <span class="span__leftarrow"> </span> -->
       <div class="button__position">
       <button class="Next_btn" onclick="musicTypeNext()"><img src="assets/image/icon_index/arrow-left.svg" alt="Next"></button>
       <button class="Prev_btn" onclick="musicTypePrev()"><img src="assets/image/icon_index/arrow-right.svg" alt="Prev"></button>
@@ -142,10 +123,10 @@
             <span class="visually-hidden">Next</span>
         </div>
       </div>
+
     </header>
     <section id="section02"></section>
     <main>
-
       <div class="main__title">
       <h1>品牌故事</h1>
       <h2>Brand Story</h2>
@@ -162,11 +143,78 @@
          Beat, Rhythm, Voice,以及將其組合而成的你。
       </article>
     </main>
-
+    <section id="section03"></section>
     <nav class="marquee">
-      <section id="section03"></section>
-      <marquee  onMouseOver="this.stop()" onMouseOut="this.start()" height="50" direction="up" scrolldelay="4" scrollamount="1>
+
+      <!-- <marquee  onMouseOver="this.stop()" onMouseOut="this.start()" height="50" direction="up" scrolldelay="4" scrollamount="1> -->
+      <!-- <marquee behavior="" direction=""SCROLLAMOUNT="30" loop="0">
         <ul>
+          <li>
+            <img
+              src="assets/image/beat_image/Anthem of Rain - Leave The Country.png"
+              alt="Anthem of Rain - Leave The Country"
+            />
+          </li>
+          <li>
+            <img
+              src="assets/image/beat_image/Audiobinger - Phony Luv.jpg.png"
+              alt="Audiobinger - Phony Luv.jpg.png"
+            />
+          </li>
+          <li>
+            <img
+              src="assets/image/beat_image/Audiobinger - The Journey.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="assets/image/beat_image/04-Rocky Marsiano - Baile Dos Poucos.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img src="assets/image/beat_image/05-Ketsa - Lala.png" alt="" />
+          </li>
+          <li>
+            <img
+              src="assets/image/beat_image/06-Makaih Beats - OnlyOne.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="assets/image/beat_image/Anthem of Rain - Leave The Country.png"
+              alt="Anthem of Rain - Leave The Country"
+            />
+          </li>
+          <li>
+            <img
+              src="assets/image/beat_image/Audiobinger - Phony Luv.jpg.png"
+              alt="Audiobinger - Phony Luv.jpg.png"
+            />
+          </li>
+          <li>
+            <img
+              src="assets/image/beat_image/Audiobinger - The Journey.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="assets/image/beat_image/04-Rocky Marsiano - Baile Dos Poucos.png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img src="assets/image/beat_image/05-Ketsa - Lala.png" alt="" />
+          </li>
+          <li>
+            <img
+              src="assets/image/beat_image/06-Makaih Beats - OnlyOne.png"
+              alt=""
+            />
+          </li>
           <li>
             <img
               src="assets/image/beat_image/Anthem of Rain - Leave The Country.png"
@@ -202,18 +250,39 @@
           </li>
         </ul>
       </marquee>
-    </nav>
+    </nav> -->
 
-    <nav>
-      <ul>
-        <li><img src="assets/image/beat_image/Anthem of Rain - Leave The Country.png" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
+    <nav class="recommend">
+      <ul class="recommend__beat">
+        <li><img src="assets/image/beat_image/Anthem of Rain - Leave The Country.png" alt="Leave The Country" width="300px" height="300px"></li>
+        <li><img src="assets/image/beat_image/Shaolin Dub - Dem-Wicked.png" alt="Dem-Wicked" width="300px" height="300px"></li>
+        <li><img src="assets/image/beat_image/Audiobinger - The Journey.png" alt="The Journey" width="300px" height="300px"></li>
+        <li><img src="assets/image/beat_image/Audiobinger - Phony Luv.jpg.png" alt="Phony Luv" width="300px" height="300px"></li>
+        <li><img src="assets/image/beat_image/Rocky Marsiano - For The MCs & DJs (cuts by X-Acto).png" alt="For The MCs & DJs" width="300px" height="300px"></li>
+
       </ul>
     </nav>
+    <nav class="recommend">
+      <ul class="recommend__vocal">
+        <li><img src="assets/image/vocal_image/LawrenceTrailer-Lets Call It.jpg" alt="Lets Call It" width="300px" height="300px"><img src="" alt=""></li>
+        <li><img src="assets/image/vocal_image/Josh Woodward-The Shade from Our Trees-The Maze.jpg" alt="The Shade from Our Trees-The Maze" width="300px" height="300px"></li>
+        <li><img src="assets/image/beat_image/Audiobinger - The Journey.png" alt="The Journey" width="300px" height="300px"></li>
+        <li><img src="assets/image/beat_image/Audiobinger - Phony Luv.jpg.png" alt="Phony Luv" width="300px" height="300px"></li>
+        <li><img src="" alt=""></li>
+
+      </ul>
+    </nav>
+    <nav class="recommend">
+      <ul class="recommend__effects">
+        <li><img src="assets/image/beat_image/Anthem of Rain - Leave The Country.png" alt="Leave The Country" width="300px" height="300px"></li>
+        <li><img src="assets/image/beat_image/Shaolin Dub - Dem-Wicked.png" alt="Dem-Wicked" width="300px" height="300px"></li>
+        <li><img src="assets/image/beat_image/Audiobinger - The Journey.png" alt="The Journey" width="300px" height="300px"></li>
+        <li><img src="assets/image/beat_image/Audiobinger - Phony Luv.jpg.png" alt="Phony Luv" width="300px" height="300px"></li>
+      </ul>
+      <div class="recommend__text">音樂 <br>推薦</div>
+    </nav>
+
+
 
     <article class="QA">
       <section id="section04"></section>
@@ -403,5 +472,6 @@
     ></script>
     <!-- <script text="javascript" src="assets/javascript/test.js"></script> -->
     <script text="javascript" src="assets/javascript/test2.js"></script>
+    <script text="javascript" src="assets/javascript/aside.goTop.js"></script>
   </body>
 </html>

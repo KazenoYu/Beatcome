@@ -2,7 +2,7 @@ main{
 	display: flex;
 	width: 80%;
 	height: 100vh;
-	margin: 25px 10% ;
+	margin: 100px 0 ;
 	font-size: 36px;
 	line-height: 36px;
 	font-family: 'Roboto', sans-serif;
@@ -13,6 +13,7 @@ main{
 	background-repeat: no-repeat;
 
 
+
 }
 
 .main__title{
@@ -20,13 +21,18 @@ main{
 	height: 100%;
 	text-align: start;
 	justify-content: center;
+	>h1{
+		line-height: 60px;
+		font-size: 48px;
+		font-weight: bold;
+		margin:50px;
+	}
+	>h2{
+		margin:50px;
+	}
 
 }
-h1{
-	line-height: 60px;
-	font-size: 48px;
-	font-weight: bold;
-}
+
 
 .main__article{
 
