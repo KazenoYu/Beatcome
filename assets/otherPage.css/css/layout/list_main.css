@@ -1,8 +1,25 @@
+@media screen and (min-width: 1194px) {
+  .body__padding {
+    padding: 50px 6.9%;
+  }
+}
+
+@media screen and (max-width: 1194px) and (min-width: 428px) {
+  .body__padding {
+    padding: 40px 4%;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .body__padding {
+    padding: 44px 5.6%;
+  }
+}
+
 .main {
   position: fixed;
   display: flex;
   height: calc(75vh - 65px);
-  /*border: 1px solid red;*/
   margin-top: 1.29vh;
   scroll-behavior: smooth;
 }
@@ -21,6 +38,7 @@
 
   .main__list__title {
     font-size: 170%;
+    width: 110px;
   }
 
   .main__list__button a > span {

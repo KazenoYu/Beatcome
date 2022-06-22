@@ -158,15 +158,11 @@ a {
   color: white;
 }
 
-img[src*='logo'] {
-  width: 47.8px;
-  height: 47.8px;
-}
-
 .navbar {
   position: fixed;
-  z-index: 0;
-  height: 115px;
+  z-index: 100;
+  width: 80%;
+  margin: 25px 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,7 +172,6 @@ img[src*='logo'] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  /*border: 1px solid red;*/
 }
 
 @media screen and (min-width: 1194px) {
@@ -201,6 +196,37 @@ img[src*='logo'] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 48px;
+}
+
+.navbar__list a {
+  position: relative;
+  display: block;
+  -webkit-transition: color 300ms;
+  transition: color 300ms;
+}
+
+.navbar__list a::before {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  content: '';
+  bottom: -10px;
+  left: 0;
+  -webkit-transition: width 300ms;
+  transition: width 300ms;
+}
+
+.navbar__list a:hover::before {
+  width: 100%;
 }
 
 .navbar__search {
@@ -249,7 +275,7 @@ img[src*='logo'] {
   margin-right: 4px;
 }
 
-.navbar__search > span {
+.Search__span {
   position: relative;
   top: 3px;
   height: 20px;
@@ -270,47 +296,6 @@ img[src*='logo'] {
 .navbar__list a {
   font-size: 24px;
   margin-left: 52px;
-}
-
-.navbar__list li:nth-of-type(1)::after {
-  position: relative;
-  top: 10px;
-  left: 55px;
-  content: '';
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 93px;
-  height: 2px;
-  background-color: #ffffff;
-}
-
-.navbar__list li:nth-of-type(2):hover::after,
-.navbar__list li:nth-of-type(3):hover::after,
-.navbar__list li:nth-of-type(4):hover::after {
-  position: relative;
-  top: 10px;
-  left: 55px;
-  content: '';
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 93px;
-  height: 2px;
-  background-color: #ffffff;
-}
-
-.navbar__list li:nth-of-type(5):hover::after {
-  position: relative;
-  top: 10px;
-  left: 50px;
-  content: '';
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50px;
-  height: 2px;
-  background-color: #ffffff;
 }
 
 .navbar__button {
@@ -499,6 +484,7 @@ header {
   z-index: 0px;
   height: 1000px;
   width: 100%;
+  margin-bottom: 10%;
 }
 
 button {
@@ -540,7 +526,7 @@ button {
   position: absolute;
   width: 200px;
   left: 40%;
-  z-index: 100;
+  z-index: 8;
   bottom: 11%;
   font-size: 48px;
   color: white;
@@ -593,7 +579,7 @@ main {
   display: flex;
   width: 80%;
   height: 100vh;
-  margin: 100px 0;
+  margin: 10% 0;
   font-size: 36px;
   line-height: 36px;
   font-family: 'Roboto', sans-serif;
@@ -607,8 +593,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-image: url("../image/background_image/BC LOGO.svg");
-  background-repeat: no-repeat;
 }
 
 .main__title {
@@ -618,6 +602,9 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 10%;
+  background-image: url("../image/background_image/BC LOGO.svg");
+  background-repeat: no-repeat;
 }
 
 .main__title > h1 {

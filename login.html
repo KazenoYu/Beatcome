@@ -9,17 +9,55 @@
   </head>
   <body>
     <nav class="navbar">
-      <a href="index.html" class="navbar__logo">
-        <img src="assets/images/logo v.2 noback.png" alt="logo" width="80px" />
-      </a>
-      <ul class="navbar__link">
-        <li><a href="#">音樂商城</a></li>
-        <li><a href="#">詞曲交流</a></li>
-        <li><a href="#">常見問題</a></li>
-        <li><a href="#">聯絡我們</a></li>
-        <li><a href="#login.html">登入</a></li>
+      <a href="#"
+        ><img src="assets/images/logo.webp" alt="logo" width="120px"
+      /></a>
+      <ul class="navbar__list">
+        <div class="navbar__search">
+          <img src="assets/images/icon/list/search.svg" alt="search" />
+          <span class="Search__span"></span>
+          <input
+            style="border-style: none"
+            type="text"
+            name="search"
+            placeholder="搜尋"
+          />
+        </div>
+        <li><a class="bind_query_A" href="Store.html">音樂商城</a></li>
+        <li><a class="bind_query_A" href="#">詞曲交流</a></li>
+        <li><a class="bind_query_A" href="#section04">常見問題</a></li>
+        <li><a class="bind_query_A" href="#section05">聯絡我們</a></li>
+        <li><a href="Login.html">登入</a></li>
       </ul>
     </nav>
+
+    <aside class="navbar__button">
+      <ul class="navbar__button__lines">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </aside>
+
+    <aside class="list__aside">
+      <div>
+        <img src="assets/images/logo.webp" alt="aside-logo" />
+        <p><a href="#">音樂商城</a></p>
+        <p><a href="#">詞曲交流</a></p>
+        <p><a href="#">常見問題</a></p>
+        <p><a href="#">聯絡我們</a></p>
+        <p><a href="#">登入</a></p>
+        <p class="aside__search">
+          <img src="assets/images/icon/list/search.svg" alt="aside-search" />
+          <input
+            style="border-style: none"
+            type="text"
+            name="search"
+            placeholder="搜尋"
+          />
+        </p>
+      </div>
+    </aside>
     <header class="main">
       <article class="main-title">
         <h1>會員登入</h1>
@@ -48,5 +86,6 @@
         </section>
       </article>
     </header>
+    <script src="assets/javascript/list_navbar_javascript.js"></script>
   </body>
 </html>

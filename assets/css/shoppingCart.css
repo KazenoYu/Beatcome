@@ -1,0 +1,122 @@
+.txtAlnLft{
+text-align:left;
+}
+.inBk{
+display: inline-block;
+}
+#shoppingCart{
+    position:fixed;
+    bottom: 75px;
+    width:100vw;
+    /* max-width:900px; */
+    padding: 20px 50px 60px 20px;
+    /* max-height: calc(100vh - 85px); */    
+    background: #c1c1c1;
+    color: #303030;
+    transition: all .4s linear;
+    transform: translate(0, 100%);
+    text-align: center;
+    z-index: 9;
+}
+#shoppingCart.show{
+    transform: translate(0, 0);
+}
+.musicLists{
+    width: 74%;
+    vertical-align: top;
+    height: 152px;
+    overflow: auto;
+    padding: 15px 0;
+}
+.musicItem{
+width: 100%;
+margin-bottom:10px;
+}
+.musicItem .idx{
+width: 7%;
+}
+.musicItem .name{
+width: 22%;
+}
+.musicItem .description{
+width: 25%;
+}
+.musicItem .type{
+width: 12%;
+}
+.musicItem .type span{
+    display: inline-block;
+    padding: 4px 0px;
+    width: 95px;
+    border-radius: 15px;
+    transform: rotate(0);
+}
+.musicItem .type.isVocal span{
+    background: #8591ff;
+    color: #3a4cf0;
+}
+.musicItem .type.isBeat span{
+    background: #adadad;
+    color: #4a4949;
+}
+.musicItem .type.isEffects span{
+    background: #ffe499;
+    color: #dbaf37;
+}
+.musicItem .price{
+    transform: rotate(0);
+    width: 12%;
+    margin: 0 20px;
+}
+.musicLists button{
+border: 1px solid #303030;
+background: none;
+padding: 3px 4px;
+border-radius: 100%;
+font-size: 14px;
+color: #303030;  
+}
+.totalInfo{      
+width: 24%;
+text-align:center;
+border-left: 3px solid #a3a3a3;
+height: 100%;
+}
+.totalInfo::before{
+content:'';
+width: 1px;
+display:inline-block;
+height:100%;
+vertical-align: middle;
+}
+.totalInfo p, .totalInfo button{
+margin-bottom: 10px;
+}
+.totalInfo .doVerticalMiddle{
+    display:inline-block;
+    vertical-align: middle;
+    padding: 10px 0;
+    font-weight: bold;
+}
+#payShopList{
+    padding: 10px 28px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    background: #303030;
+    border-radius: 15px;
+    border: none;
+}
+#toggleShopList{
+    position: absolute;
+    right: 30px;
+    top: 0px;
+    font-size: 36px;
+    color: #303030;
+    padding: 8px 25px;
+    transform: translate(0, -100%);
+    background: #c1c1c1;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+}

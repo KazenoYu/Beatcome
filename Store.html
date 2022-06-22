@@ -21,15 +21,15 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/otherPage.css/css/list_style.css" />
-    <link rel="stylesheet" href="assets/css/shoppingCart.css" />    
+    <link rel="stylesheet" href="assets/css/shoppingCart.css" />
   </head>
   <body>
     <nav class="navbar">
-      <a class="bind_query_A" href="index.html"><img src="assets/images/logo.webp" alt="logo" /></a>
+      <a href="index.html"><img src="assets/images/logo.webp" alt="logo" width="120px"/></a>
       <ul class="navbar__list">
         <div class="navbar__search">
           <img src="assets/images/icon/list/search.svg" alt="search" />
-          <span></span>
+          <span class="Search__span"></span>
           <input
             style="border-style: none"
             type="text"
@@ -37,11 +37,11 @@
             placeholder="搜尋"
           />
         </div>
-        <li><a href="#">音樂商城</a></li>
-        <li><a href="#">詞曲交流</a></li>
-        <li><a href="#">常見問題</a></li>
-        <li><a href="#">聯絡我們</a></li>
-        <li><a href="#">登入</a></li>
+        <li><a class="bind_query_A" href="Store.html">音樂商城</a></li>
+        <li><a class="bind_query_A" href="#">詞曲交流</a></li>
+        <li><a class="bind_query_A" href="index.html?#section04">常見問題</a></li>
+        <li><a class="bind_query_A" href="index.html?#section04">聯絡我們</a></li>
+        <li><a href="Login.html">登入</a></li>
       </ul>
     </nav>
 
@@ -56,9 +56,9 @@
     <aside class="list__aside">
       <div>
         <img src="assets/images/logo.webp" alt="aside-logo" />
-        <p><a href="#">音樂商城</a></p>
-        <p><a href="#">詞曲交流</a></p>
-        <p><a href="#">常見問題</a></p>
+        <p><a href="Store.html">音樂商城</a></p>
+        <p><a href="">詞曲交流</a></p>
+        <p><a href="section04">常見問題</a></p>
         <p><a href="#">聯絡我們</a></p>
         <p><a href="#">登入</a></p>
         <p class="aside__search">
@@ -72,7 +72,7 @@
         </p>
       </div>
     </aside>
-
+    <div class="body__padding">
     <main class="main">
       <article class="main__list">
         <p class="main__list__title">音樂列表</p>
@@ -99,6 +99,7 @@
           >
         </section>
       </article>
+
       <article class="main__music">
         <article id="recommended__area">
           <span class="main__music__title">
@@ -2042,12 +2043,88 @@
         </article>
       </article>
     </main>
+  </div>
+    <footer class="music-player__footer">
+      <div class="music-player__container" id="music-player__container">
+        <audio id="audio">
+          <!-- source 讓音樂可以從函數庫中抓取 -->
+          <source id="audio_source" />
+        </audio>
+        <!-- <audio
+          src="assets/music/beat/01-Anthem of Rain - Leave The Country.mp3"
+          id="audio"
+        >
+        </audio> -->
 
-    <footer class="footer">
+        <div class="music-player__img-container">
+          <img
+            src="assets/image/beat_image/Anthem of Rain - Leave The Country.png"
+            alt="music-cover"
+            id="album__cover"
+          />
+        </div>
+        <div class="music-player__navigation">
+          <button id="music-playe__prev" class="music-player__action-btn-prev">
+            <i class="fas fa-backward"></i>
+          </button>
+
+          <button
+            id="music-player__play"
+            class="music-player__action-btn__action-btn-big"
+          >
+            <!-- onclick="mainStart()" -->
+            <i class="fas fa-play"></i>
+            <!-- <i class="fas fa-pause"></i> -->
+          </button>
+
+          <button id="music-player__next" class="music-player__action-btn-next">
+            <i class="fas fa-forward"></i>
+          </button>
+
+          <button
+            id="music-player__random"
+            class="music-player__action-btn-random"
+          >
+            <!-- onclick="mainRandom()" -->
+            <i class="fas fa-shuffle"></i>
+          </button>
+
+          <button id="music-player__loop" class="music-player__action-btn-loop">
+            <i class="fas fa-arrows-rotate"></i>
+          </button>
+
+          <div
+            class="music-player__progress-container"
+            id="music-player__progress-container"
+          >
+            <div
+              class="music-player__progress"
+              id="music-player__progress"
+            ></div>
+
+            <div class="music-player__info">
+              <h4 id="music-player__title"></h4>
+            </div>
+          </div>
+          <!-- <button id="music-player__list" class="music-player__action-btn-list">
+            <i class="fas fa-bars-staggered"></i>
+          </button> -->
+          <!-- <nav class="aside-trigger">
+            <i class="fas fa-bars-staggered"></i>
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <aside class="aside">
+              <a href="#"><i class="fas fa-bars-staggered"></i></a>
+            </aside>
+          </nav> -->
+        </div>
+      </div>
 
       <div id="shoppingCart" class="show">
         <div class="musicLists inBk">
-          
+
         </div>
         <div class="totalInfo inBk">
           <div class="doVerticalMiddle">
@@ -2062,18 +2139,22 @@
               元
             </p>
             <button id="payShopList">付款</button>
-          </div>    
+          </div>
         </div>
         <div id="toggleShopList">
           <i class="fa-solid fa-cart-shopping"></i>
         </div>
       </div>
 
-    </footer>    
+    </footer>
+    <script
+      typ="text/javascript"
+      src="assets/javascript/audio.script.js"
+    ></script>
     <script text="javascript" src="assets/javascript/test2.js"></script>
     <script text="javascript" src="assets/javascript/shopList.js"></script>
     <script src="assets/javascript/list_navbar_javascript.js"></script>
     <script src="assets/javascript/list_main_javascript.js"></script>
-  </body>  
-  
+  </body>
+
 </html>

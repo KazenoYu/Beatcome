@@ -20,7 +20,7 @@ body {
   scroll-behavior: smooth;
 }
 
-@media screen and (min-width: 1194px) {
+/* @media screen and (min-width: 1194px) {
   body {
     padding: 50px 6.9%;
   }
@@ -36,7 +36,7 @@ body {
   body {
     padding: 44px 5.6%;
   }
-}
+} */
 
 body a {
   text-decoration: none;

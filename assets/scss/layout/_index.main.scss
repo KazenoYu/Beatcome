@@ -2,15 +2,13 @@ main{
 	display: flex;
 	width: 80%;
 	height: 100vh;
-	margin: 100px 0 ;
+	margin: 10% 0 ;
 	font-size: 36px;
 	line-height: 36px;
 	font-family: 'Roboto', sans-serif;
 	justify-content: center;
 	align-items: center;
 	flex-direction: row;
-	background-image: url("../image/background_image/BC LOGO.svg");
-	background-repeat: no-repeat;
 
 
 
@@ -21,6 +19,10 @@ main{
 	height: 100%;
 	text-align: start;
 	justify-content: center;
+	margin: 10%;
+	background-image: url("../image/background_image/BC LOGO.svg");
+	background-repeat: no-repeat;
+
 	>h1{
 		line-height: 60px;
 		font-size: 48px;
