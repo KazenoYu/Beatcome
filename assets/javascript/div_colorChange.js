@@ -35,17 +35,3 @@ const colors = [
 ];
 
 let playType = 0;
-function musicTypeNext() {
-  playType += 1;
-  if (playType >= colors.length) playType = 0;
-  $('body').css('background', colors[playType].color);
-  $('.colorChange__text').text(colors[playType].type);
-  console.log(colors[playType]);
-}
-function musicTypePrev() {
-  playType -= 1;
-  // colors.length 為 陣列 "數"
-  if (playType < 0) playType = colors.length - 1;
-  $('body').css('background', colors[playType].color);
-  $('.colorChange__text').text(colors[playType].type);
-}

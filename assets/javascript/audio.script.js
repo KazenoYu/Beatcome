@@ -76,7 +76,7 @@ class AudioMain {
   playAudioPrev() {
     //- 播放 上一首
     let targetNextCtn = this.playingVideoCtn - 1;
-    if (this.playingVideoCtn < 0) targetNextCtn = 0;
+    if (targetNextCtn < 0) targetNextCtn = this.audioObjList.length - 1;
     this.playListAudio(targetNextCtn);
   }
   playAudioRandom() {

@@ -33,11 +33,34 @@ var playlistClickFour = function () {
 
 playlistClickOne();
 
-/*var mainMusicContent = document.querySelector('.main__music__content');
-var mainMusicScrollTop = document.querySelector(
-  '.main__music__content',
-).scrollTop;
+var mainMusic = document.querySelector('.main__music');
 
-mainMusicContent.onscroll = function () {
-  console.log(mainMusicScrollTop);
-};*/
+mainMusic.onscroll = function () {
+  if (mainMusic.scrollTop >= 0 && mainMusic.scrollTop < 884) {
+    playlist.forEach(function (element) {
+      element.classList.remove('active');
+    });
+    playlistOne.classList.add('active');
+  } else if (
+    mainMusic.scrollTop >= 884 &&
+    mainMusic.scrollTop < 2899.199951171875
+  ) {
+    playlist.forEach(function (element) {
+      element.classList.remove('active');
+    });
+    playlistTwo.classList.add('active');
+  } else if (
+    mainMusic.scrollTop >= 2899.199951171875 &&
+    mainMusic.scrollTop < 4914.39990234375
+  ) {
+    playlist.forEach(function (element) {
+      element.classList.remove('active');
+    });
+    playlistThree.classList.add('active');
+  } else {
+    playlist.forEach(function (element) {
+      element.classList.remove('active');
+    });
+    playlistFour.classList.add('active');
+  }
+};

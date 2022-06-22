@@ -163,8 +163,9 @@
   transition: transform 300ms, margin-top 300ms, width 300ms, height 300ms;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1134px) {
   img[src*='logo'] {
+    width: ;
     height: 72px;
   }
 

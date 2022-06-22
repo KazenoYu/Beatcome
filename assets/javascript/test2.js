@@ -14,6 +14,7 @@ function callback_play(val) {
   // $("#music-player__play").addClass("isPlaying");//-改按鈕狀態
   $('#music-player__title').text(val.name); //- 顯示歌名
   $('#album__cover').attr('src', val.fileImg); //-切換圖片
+  $('#album__cover').addClass('show');
   $('#music-player__play i').removeClass('fa-play').addClass('fa-pause'); //改UI顯示
   clearInterval(myTimelineInterval);
   myTimelineInterval = setInterval(renderTimeLine, 100);
@@ -23,12 +24,13 @@ function callback_pause(val) {
   console.log('Out-Get-pause!!', val);
   // $("#music-player__play").removeClass("isPlaying");//-改按鈕狀態
   clearInterval(myTimelineInterval);
+  $('#album__cover').removeClass('show');
   $('#music-player__play i').removeClass('fa-pause').addClass('fa-play'); //改UI顯示
 }
 function renderTimeLine() {
   //- 取得音樂撥放中秒數狀態
   if (myAudioPlayer == null) return;
-  console.log('GetPlayingTime::', myAudioPlayer.el_audio.currentTime);
+  // console.log('GetPlayingTime::', myAudioPlayer.el_audio.currentTime);
 }
 
 var fileListsVocal = [
@@ -350,7 +352,11 @@ function initAudioMain(targetLists, startAudio) {
 $('#music-player__play').bind('click', () => {
   //- button 音樂 播放/暫停
   if (myAudioPlayer == null) {
-    initAudioMain(fileListsVocal, 0);
+    const theType = colors[playType].type;
+    initAudioMain(
+      fileListsVocal.filter((e) => e.type == theType),
+      0,
+    );
     return;
   }
   if (myAudioPlayer.isPlaying) {
@@ -397,3 +403,66 @@ $('#music-player__loop').bind('click', () => {
     if(myAudioPlayer.isCycle)$("#music-player__loop").addClass
     */
 });
+
+$('.recommend img').bind('click', function () {
+  //- 跑馬燈撥放 音樂
+  const targetMusicName = $(this).attr('alt');
+
+  const FindMusicFromList = fileListsVocal.filter((e, index) => {
+    return e.name.includes(targetMusicName);
+  });
+  if (FindMusicFromList.length == 0) return; //- arrayObj沒找到Music
+
+  if (myAudioPlayer == null) {
+    myAudioPlayer = new AudioMain(
+      elementAudio, //- <audio> tag element
+      elementAudioSource, //- <source> tag element
+      FindMusicFromList,
+      true,
+      0,
+      callback_play,
+      callback_pause,
+      callback_end,
+    );
+  } else {
+    let foundIdx = -1;
+    const hasItem = myAudioPlayer.audioObjList.find((element, idx) => {
+      var returnV = element.name.includes(FindMusicFromList[0].name);
+      if (returnV) foundIdx = idx;
+      return returnV;
+    });
+    if (hasItem) myAudioPlayer.playListAudio(foundIdx);
+    else {
+      myAudioPlayer.audioObjList.push(FindMusicFromList[0]);
+      myAudioPlayer.setListObjectParse(myAudioPlayer.audioObjList);
+      myAudioPlayer.playListAudio(myAudioPlayer.audioObjList.length - 1);
+    }
+  }
+});
+
+function musicTypeNext() {
+  playType += 1;
+  if (playType >= colors.length) playType = 0;
+  $('body').css('background', colors[playType].color);
+  $('.colorChange__text').text(colors[playType].type);
+  console.log(colors[playType]);
+
+  const theType = colors[playType].type;
+  initAudioMain(
+    fileListsVocal.filter((e) => e.type == theType),
+    0,
+  );
+}
+function musicTypePrev() {
+  playType -= 1;
+  // colors.length 為 陣列 "數"
+  if (playType < 0) playType = colors.length - 1;
+  $('body').css('background', colors[playType].color);
+  $('.colorChange__text').text(colors[playType].type);
+
+  const theType = colors[playType].type;
+  initAudioMain(
+    fileListsVocal.filter((e) => e.type == theType),
+    0,
+  );
+}

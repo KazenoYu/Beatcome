@@ -4,6 +4,8 @@ body{
 	color: white;
 	text-align: center;
 	transition: background .5s linear;
+	max-width: 100vw;
+	overflow-x: hidden;
 }
 html {
 	scroll-behavior: smooth;

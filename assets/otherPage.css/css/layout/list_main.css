@@ -1,33 +1,34 @@
+.body__padding {
+  padding: 10%;
+}
+
 @media screen and (min-width: 1194px) {
-  .body__padding {
+  .body-padding {
     padding: 50px 6.9%;
   }
 }
 
 @media screen and (max-width: 1194px) and (min-width: 428px) {
-  .body__padding {
+  .body-padding {
     padding: 40px 4%;
   }
 }
 
 @media screen and (max-width: 428px) {
-  .body__padding {
+  .body-padding {
     padding: 44px 5.6%;
   }
 }
 
 .main {
-  position: fixed;
   display: flex;
-  height: calc(75vh - 65px);
+  width: 100%;
   margin-top: 1.29vh;
-  scroll-behavior: smooth;
 }
 
 @media screen and (min-width: 1194px) {
   .main {
-    width: 86.2%;
-    top: 158px;
+    height: calc(75vh - 65px);
   }
 
   .main__list {
@@ -38,7 +39,6 @@
 
   .main__list__title {
     font-size: 170%;
-    width: 110px;
   }
 
   .main__list__button a > span {
@@ -49,8 +49,6 @@
   .main__music {
     margin-right: 2.7%;
     margin-top: 4.8vh;
-    overflow-x: hidden;
-    overflow-y: auto;
   }
 
   .main__music__title p {
@@ -58,13 +56,21 @@
   }
 }
 
-@media screen and (max-width: 1194px) and (min-width: 428px) {
+@media screen and (max-width: 1194px) and (min-width: 1000px) {
   .main {
-    width: 92%;
-    top: 145px;
+    height: calc(76vh - 65px);
   }
+}
 
+@media screen and (max-width: 1000px) and (min-width: 428px) {
+  .main {
+    height: calc(82vh - 65px);
+  }
+}
+
+@media screen and (max-width: 1194px) and (min-width: 428px) {
   .main__list {
+    width: 88px;
     align-items: flex-start;
     margin-right: 40px;
   }
@@ -78,6 +84,11 @@
     height: 80px;
   }
 
+  .main__music {
+    margin-right: 2.7%;
+    margin-top: 4.8vh;
+  }
+
   .main__music__title p {
     margin-right: 15px;
   }
@@ -88,26 +99,26 @@
     position: relative;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    top: 65px;
+    height: calc(82vh - 65px);
+    margin-top: 0;
   }
 
   .main__list {
     align-items: center;
+    height: 135px;
   }
 
   .main__list__title {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
   }
 
   .main__list__button a > span {
-    width: 75px;
-    height: 75px;
+    width: 62px;
+    height: 62px;
   }
 
-  .main__music {
-    overflow-x: hidden;
-    overflow-y: auto;
+  .main__list__button a {
+    font-size: 14.66px;
   }
 
   .main__music__title p {
@@ -116,7 +127,6 @@
 }
 
 .main__list {
-  /*border: 1px solid white;*/
   display: flex;
   flex-direction: column;
 }
@@ -124,6 +134,12 @@
 .main__list__title {
   font-weight: 700;
   margin-bottom: 17px;
+}
+
+@media screen and (max-width: 1463px) and (min-width: 1194px) {
+  .main__list__title {
+    font-size: 1.6rem;
+  }
 }
 
 @media screen and (min-width: 428px) {
@@ -143,7 +159,6 @@
     align-items: center;
     justify-content: flex-start;
     width: 1093px;
-    /*background-color: blanchedalmond;*/
     overflow: hidden;
     margin-bottom: 12px;
   }
@@ -162,7 +177,6 @@
     align-items: center;
     justify-content: flex-start;
     width: 1093px;
-    /*background-color: blanchedalmond;*/
     overflow: hidden;
     margin-bottom: 12px;
   }
@@ -208,31 +222,29 @@
 .main__music {
   position: relative;
   width: 100%;
-  /*border: 1px solid white;*/
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 #recommended__area > span > p {
   font-size: 1.5rem;
   width: 96px;
-  /*background-color: aquamarine;*/
 }
 
 #beat__area > span > p {
   font-size: 1.5rem;
   width: 52px;
-  /*background-color: aquamarine;*/
 }
 
 #vocal__area > span > p {
   font-size: 1.5rem;
   width: 65px;
-  /*background-color: aquamarine;*/
 }
 
 #effects__area > span > p {
   font-size: 1.5rem;
   width: 75px;
-  /*background-color: aquamarine;*/
 }
 
 .main__music__title > span {
@@ -246,7 +258,15 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  /*background-color: brown;*/
+}
+
+.main__music__content section {
+  margin-bottom: 10px;
+  width: 200px;
+  height: 250px;
+  border: 1px solid #8080800f;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px 1px rgba(255, 255, 255, 0.1);
 }
 
 @media screen and (min-width: 1194px) {
@@ -256,31 +276,48 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 245.45px;
-    margin-right: 65px;
-    margin-bottom: 36px;
-    /*border: 1px solid white;
-    background-color: blue;*/
+    width: 208.142px;
+    min-height: 255.45px;
+    margin-right: 5%;
+    margin-bottom: 30.85px;
   }
 
-  .main__music__content img[alt*='picture'] {
+  .main__music__content > section > a > div {
+    margin-top: 10px;
     width: 130px;
     height: 150px;
   }
 
+  .main__music__content img[alt*='picture'] {
+    margin-top: -35px;
+    width: 141.91px;
+    height: 132.83px;
+  }
+
   .main__music__content__text {
-    position: relative;
+    position: absolute;
+    top: 100px;
+    left: -8px;
     line-height: 1.3rem;
-    left: 0px;
   }
 
   .main__music__content__btn {
     position: absolute;
-    right: -15px;
-    bottom: 0;
+    right: 0px;
+    bottom: 0px;
     display: flex;
     flex-direction: column;
+  }
+
+  img[alt*='playIcon'] {
+    position: absolute;
+    top: -98px;
+    right: 30px;
+    width: 41px;
+  }
+
+  img[alt*='cart'] {
+    width: 41px;
   }
 
   .main__music__content__text p {
@@ -289,23 +326,12 @@
 }
 
 @media screen and (max-width: 1194px) and (min-width: 428px) {
-  .main__music {
-    position: relative;
-    margin-right: 2%;
-    margin-top: 4.8vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    /*border: 5px solid red;*/
-  }
-
   .main__music__title {
     position: relative;
   }
 
   .main__music__content {
     flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-around;
   }
 
   .main__music__content > section {
@@ -313,29 +339,47 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 197.35px;
-    height: 187.64px;
-    margin-right: 25px;
-    margin-bottom: 65px;
-    /*border: 1px solid white;*/
+    width: 186.43px;
+    min-height: 208.23px;
+    margin-right: 3.5%;
+    margin-bottom: 30.75px;
+  }
+
+  .main__music__content > section > a > div {
+    width: 130px;
+    height: 150px;
+    margin-top: 15.69px;
   }
 
   .main__music__content img[alt*='picture'] {
-    width: 114px;
-    height: 148px;
+    width: 121.96px;
+    height: 97.83px;
+  }
+
+  .main__music__content__text {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    line-height: 1.3rem;
   }
 
   .main__music__content__btn {
     position: absolute;
-    right: -15px;
-    bottom: -30px;
+    right: 0px;
+    bottom: 0px;
     display: flex;
     flex-direction: column;
   }
 
-  .main__music__content__text {
-    position: relative;
-    left: -18px;
+  img[alt*='playIcon'] {
+    position: absolute;
+    top: -130px;
+    right: 30px;
+    width: 41px;
+  }
+
+  img[alt*='cart'] {
+    width: 41px;
   }
 
   .main__music__content__text p {
@@ -343,26 +387,7 @@
   }
 }
 
-@media screen and (max-width: 1054px) and (min-width: 833px) {
-  .main__music__content > section:nth-last-child(2) {
-    position: relative;
-    left: -8%;
-  }
-
-  .main__music__content > section:nth-last-child(1) {
-    position: relative;
-    left: -25%;
-  }
-}
-
 @media screen and (max-width: 428px) {
-  /*#recommended__area {
-    width: 100%;
-    height: 100%;
-    background-color: #f9d760;
-    overflow-x: auto;
-  }*/
-
   .main__music__content {
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -373,15 +398,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 157px;
-    height: 24.5vh;
-    margin-bottom: 18vh;
-    /*border: 1px solid white;*/
+    width: 147.89px;
+    height: 215.25px;
+    margin-bottom: 8px;
   }
 
   .main__music__content img[alt*='picture'] {
-    width: 130px;
-    height: 150px;
+    width: 97.02px;
+    height: 91.13px;
+  }
+
+  img[alt*='playIcon'] {
+    position: absolute;
+    top: -120px;
+    right: 20px;
+    width: 37.31px;
+  }
+
+  img[alt*='cart'] {
+    width: 37.31px;
+  }
+
+  .main__music__content__text {
+    position: absolute;
+    top: 90px;
+    left: 0px;
   }
 
   .main__music__content__text p {
@@ -389,27 +430,19 @@
   }
 
   .main__music__content__btn {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
   }
 }
 
-.main__music__content a > section > div {
+.main__music__content > section > a > div {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-.main__music__content img {
-  width: 41px;
-  margin-top: 8px;
-}
-
-img[alt*='cart'] {
-  width: 43.38px;
-  /*right: -2px;
-  bottom: -2px;*/
 }
 
 .main__music__content__text > span {

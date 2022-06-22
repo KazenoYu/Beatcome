@@ -49,9 +49,12 @@
   animation-play-state: paused;
 }
 
-.music-player__container.play .musice-player__img-container img {
+.music-player__img-container img.show{
   animation-play-state: running;
 }
+// .music-player__container.play .musice-player__img-container img {
+//   animation-play-state: running;
+// }
 
 @keyframes rotate {
   from {

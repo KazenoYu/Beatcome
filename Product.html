@@ -6,180 +6,343 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Store</title>
     <link rel="stylesheet" href="assets/otherPage.css/page.style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
   </head>
   <body>
     <nav class="navbar">
-      <a href="index.html" class="navbar__logo">
-        <img src="assets/images/logo v.2 noback.png" alt="logo" width="80px" />
-      </a>
-      <ul class="navbar__link">
-        <li><a href="#">音樂商城</a></li>
-        <li><a href="#">詞曲交流</a></li>
-        <li><a href="#">常見問題</a></li>
-        <li><a href="#">聯絡我們</a></li>
-        <li><a href="#">登入</a></li>
+      <a href="index.html" class="bind_query_A"
+        ><img src="assets/images/logo.webp" alt="logo" width="120px"
+      /></a>
+      <ul class="navbar__list">
+        <div class="navbar__search">
+          <img src="assets/images/icon/list/search.svg" alt="search" />
+          <span class="Search__span"></span>
+          <input
+            style="border-style: none"
+            type="text"
+            name="search"
+            placeholder="搜尋"
+          />
+        </div>
+        <li><a class="bind_query_A" href="Store.html">音樂商城</a></li>
+        <li><a class="bind_query_A" href="#">詞曲交流</a></li>
+        <li>
+          <a class="bind_query_A" href="index.html?#section04">常見問題</a>
+        </li>
+        <li>
+          <a class="bind_query_A" href="index.html?#section04">聯絡我們</a>
+        </li>
+        <li><a href="Login.html">登入</a></li>
       </ul>
     </nav>
-    <header>
-      <article class="main">
-        <section class="main-cover">
-          <img
-            class="main-cover__pic1"
-            src="assets/images/音樂封面/人聲/Zebra Island-Not Alone.jpg"
-            alt="cover"
-            width="250px"
+
+    <aside class="navbar__button">
+      <ul class="navbar__button__lines">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </aside>
+
+    <aside class="list__aside">
+      <div>
+        <img src="assets/images/logo.webp" alt="aside-logo" />
+        <p><a href="Store.html">音樂商城</a></p>
+        <p><a href="#">詞曲交流</a></p>
+        <p><a href="index.html?#section04">常見問題</a></p>
+        <p><a href="index.html?#section05">聯絡我們</a></p>
+        <p><a href="Login.html">登入</a></p>
+        <p class="aside__search">
+          <img src="assets/images/icon/list/search.svg" alt="aside-search" />
+          <input
+            style="border-style: none"
+            type="text"
+            name="search"
+            placeholder="搜尋"
           />
-          <img
-            class="main-cover__pic2"
-            src="assets/images/音樂封面/人聲/Zebra Island-Not Alone.jpg"
-            alt="cover"
-            width="210px"
-          />
-        </section>
-        <section class="main-text">
-          <h1>Not Alone</h1>
-          <h2>Zebra Island</h2>
-          <a href="#"
-            ><img src="assets/images/vocal.svg" alt="vocal" width="80px"
-          /></a>
-          <p>
-            <img
-              src="assets/images/fillheart.svg"
-              alt="hearted"
-              height="20px"
-            />30 &nbsp
-            <img src="assets/images/share.svg" alt="shared" height="20px" />23
-          </p>
-        </section>
-        <section class="main-active">
-          <ul class="main-active__btn">
-            <li>
-              <a href=""
-                ><img src="assets/images/unfill.svg" alt="heart" height="30px"
-              /></a>
-            </li>
-            <li>
-              <a href=""
-                ><img src="assets/images/share.svg" alt="share" height="30px"
-              /></a>
-            </li>
-            <li>
-              <a href="">
-                <img
-                  src="assets/images/play_pink.svg"
-                  alt="play"
-                  height="30px"
-                />
-              </a>
-            </li>
-          </ul>
-          <ul class="main-active__cart">
-            <li>
-              <p>NTD 580</p>
-            </li>
-            <li>
-              <button>
-                <img
-                  src="assets/images/addcart.svg"
-                  alt="add cart"
-                  width="20px"
-                />
-                加入購物車
-              </button>
-            </li>
-          </ul>
-        </section>
-      </article>
-    </header>
-    <article class="info">
-      <section class="info-info">
-        <h3>歌曲情報</h3>
-        <hr />
-        <p>
-          Produced by Rasmus Lill <br />
-          Mastered by Håkan Åkesson <br />
-          Lyrics by Rasmus <br />
-          <br />
-          Learn More info: www.facebook.com/zebraisland
         </p>
-      </section>
-      <section class="info-comments">
-        <h3>留言</h3>
-        <hr />
-        <div class="info-comments-board">
-          <div class="info-comments-board__input">
-            <img src="assets/images/proto.png" alt="proto pics" />
-            <div class="info-comments-board__input__text">
-              <h4>UserName</h4>
-
-              <input type="text" placeholder="請輸入留言．．．" />
-            </div>
-            <div class="info-comments-board__input__submit">
-              <button>送出</button>
-            </div>
-          </div>
-          <hr />
-          <div class="info-comments-board__message">
-            <img src="assets/images/proto.png" alt="proto pics" />
-            <div class="info-comments-board__message__text">
-              <h4>UserName</h4>
-              <p>留言內容</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </article>
-
-    <aside class="command">
-      <h3>相似推薦</h3>
-      <div class="command-block">
-        <img
-          src="assets/images/音樂封面/beat_image/13-Shaolin Dub - Temple-Life.png"
-          alt="song"
-          width="100px"
-        />
-        <div class="command-block__text">
-          <span
-            ><h4>Temple-Life</h4>
-            <h5>Shaolin Dub</h5>
-          </span>
-          <a href="#"
-            ><img src="assets/images/play_gray.svg" alt="playbtn"
-          /></a>
-        </div>
-      </div>
-      <div class="command-block">
-        <img
-          src="assets/images/音樂封面/beat_image/05-Ketsa - Lala.png"
-          alt="song"
-          width="100px"
-        />
-        <div class="command-block__text">
-          <span
-            ><h4>Ketsa</h4>
-            <h5>Lala</h5>
-          </span>
-          <a href="#"
-            ><img src="assets/images/play_gray.svg" alt="playbtn"
-          /></a>
-        </div>
-      </div>
-      <div class="command-block">
-        <img
-          src="assets/images/音樂封面/beat_image/17-Popoi - Dorila y Mello.png"
-          alt="song"
-          width="100px"
-        />
-        <div class="command-block__text">
-          <span
-            ><h4>Popoi</h4>
-            <h5>Dorila y Mello</h5>
-          </span>
-          <a href="#"
-            ><img src="assets/images/play_gray.svg" alt="playbtn"
-          /></a>
-        </div>
       </div>
     </aside>
+
+    <aside class="list__aside">
+      <div>
+        <img src="assets/images/logo.webp" alt="aside-logo" />
+        <p><a href="#">音樂商城</a></p>
+        <p><a href="#">詞曲交流</a></p>
+        <p><a href="#">常見問題</a></p>
+        <p><a href="#">聯絡我們</a></p>
+        <p><a href="#">登入</a></p>
+        <p class="aside__search">
+          <img src="assets/images/icon/list/search.svg" alt="aside-search" />
+          <input
+            style="border-style: none"
+            type="text"
+            name="search"
+            placeholder="搜尋"
+          />
+        </p>
+      </div>
+    </aside>
+
+    <div class="body-padding">
+      <header>
+        <article class="main">
+          <section class="main-cover">
+            <img
+              class="main-cover__pic1"
+              src="assets/images/音樂封面/人聲/Zebra Island-Not Alone.jpg"
+              alt="cover"
+              width="250px"
+            />
+            <img
+              class="main-cover__pic2"
+              src="assets/images/音樂封面/人聲/Zebra Island-Not Alone.jpg"
+              alt="cover"
+              width="210px"
+            />
+          </section>
+          <section class="main-text">
+            <h1>Not Alone</h1>
+            <h2>Zebra Island</h2>
+            <a href="#"
+              ><img src="assets/images/vocal.svg" alt="vocal" width="80px"
+            /></a>
+            <p>
+              <img
+                src="assets/images/fillheart.svg"
+                alt="hearted"
+                height="20px"
+              />30 &nbsp
+              <img src="assets/images/share.svg" alt="shared" height="20px" />23
+            </p>
+          </section>
+          <section class="main-active">
+            <ul class="main-active__btn">
+              <li>
+                <a href=""
+                  ><img
+                    src="assets/images/unfill.svg"
+                    alt="heart"
+                    height="30px"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="assets/images/share.svg" alt="share" height="30px"
+                /></a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="assets/images/play_pink.svg"
+                    alt="play"
+                    height="30px"
+                  />
+                </a>
+              </li>
+            </ul>
+            <ul class="main-active__cart">
+              <li>
+                <p>NTD 580</p>
+              </li>
+              <li>
+                <button>
+                  <img
+                    src="assets/images/addcart.svg"
+                    alt="add cart"
+                    width="20px"
+                  />
+                  加入購物車
+                </button>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </header>
+      <article class="info">
+        <section class="info-info">
+          <h3>歌曲情報</h3>
+          <hr />
+          <p>
+            Produced by Rasmus Lill <br />
+            Mastered by Håkan Åkesson <br />
+            Lyrics by Rasmus <br />
+            <br />
+            Learn More info: www.facebook.com/zebraisland
+          </p>
+        </section>
+        <section class="info-comments">
+          <h3>留言</h3>
+          <hr />
+          <div class="info-comments-board">
+            <div class="info-comments-board__input">
+              <img src="assets/images/proto.png" alt="proto pics" />
+              <div class="info-comments-board__input__text">
+                <h4>UserName</h4>
+
+                <input type="text" placeholder="請輸入留言．．．" />
+              </div>
+              <div class="info-comments-board__input__submit">
+                <button>送出</button>
+              </div>
+            </div>
+            <hr />
+            <div class="info-comments-board__message">
+              <img src="assets/images/proto.png" alt="proto pics" />
+              <div class="info-comments-board__message__text">
+                <h4>UserName</h4>
+                <p>留言內容</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <aside class="command">
+        <h3>相似推薦</h3>
+        <div class="command-block">
+          <img
+            src="assets/images/音樂封面/beat_image/13-Shaolin Dub - Temple-Life.png"
+            alt="song"
+            width="100px"
+          />
+          <div class="command-block__text">
+            <span
+              ><h4>Temple-Life</h4>
+              <h5>Shaolin Dub</h5>
+            </span>
+            <a href="#"
+              ><img src="assets/images/play_gray.svg" alt="playbtn"
+            /></a>
+          </div>
+        </div>
+        <div class="command-block">
+          <img
+            src="assets/images/音樂封面/beat_image/05-Ketsa - Lala.png"
+            alt="song"
+            width="100px"
+          />
+          <div class="command-block__text">
+            <span
+              ><h4>Ketsa</h4>
+              <h5>Lala</h5>
+            </span>
+            <a href="#"
+              ><img src="assets/images/play_gray.svg" alt="playbtn"
+            /></a>
+          </div>
+        </div>
+        <div class="command-block">
+          <img
+            src="assets/images/音樂封面/beat_image/17-Popoi - Dorila y Mello.png"
+            alt="song"
+            width="100px"
+          />
+          <div class="command-block__text">
+            <span
+              ><h4>Popoi</h4>
+              <h5>Dorila y Mello</h5>
+            </span>
+            <a href="#"
+              ><img src="assets/images/play_gray.svg" alt="playbtn"
+            /></a>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <footer class="music-player__footer">
+      <div class="music-player__container" id="music-player__container">
+        <audio id="audio">
+          <!-- source 讓音樂可以從函數庫中抓取 -->
+          <source id="audio_source" />
+        </audio>
+        <!-- <audio
+          src="assets/music/beat/01-Anthem of Rain - Leave The Country.mp3"
+          id="audio"
+        >
+        </audio> -->
+
+        <div class="music-player__img-container">
+          <img
+            src="assets/image/beat_image/Anthem of Rain - Leave The Country.png"
+            alt="music-cover"
+            id="album__cover"
+          />
+        </div>
+        <div class="music-player__navigation">
+          <button id="music-playe__prev" class="music-player__action-btn-prev">
+            <i class="fas fa-backward"></i>
+          </button>
+
+          <button
+            id="music-player__play"
+            class="music-player__action-btn__action-btn-big"
+          >
+            <!-- onclick="mainStart()" -->
+            <i class="fas fa-play"></i>
+            <!-- <i class="fas fa-pause"></i> -->
+          </button>
+
+          <button id="music-player__next" class="music-player__action-btn-next">
+            <i class="fas fa-forward"></i>
+          </button>
+
+          <button
+            id="music-player__random"
+            class="music-player__action-btn-random"
+          >
+            <!-- onclick="mainRandom()" -->
+            <i class="fas fa-shuffle"></i>
+          </button>
+
+          <button id="music-player__loop" class="music-player__action-btn-loop">
+            <i class="fas fa-arrows-rotate"></i>
+          </button>
+
+          <div
+            class="music-player__progress-container"
+            id="music-player__progress-container"
+          >
+            <div
+              class="music-player__progress"
+              id="music-player__progress"
+            ></div>
+
+            <div class="music-player__info">
+              <h4 id="music-player__title"></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="shoppingCart" class="show">
+        <div class="musicLists inBk"></div>
+        <div class="totalInfo inBk">
+          <div class="doVerticalMiddle">
+            <p>
+              共計
+              <span id="shopTotalCtn">0</span>
+              首歌曲
+            </p>
+            <p>
+              NTD
+              <span id="shopTotalPrice">0</span>
+              元
+            </p>
+            <button id="payShopList">付款</button>
+          </div>
+        </div>
+        <div id="toggleShopList">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </div>
+    </footer>
+    <script
+      text="javascript"
+      src="assets/javascript/list_navbar_javascript.js"
+    ></script>
   </body>
 </html>
