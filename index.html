@@ -28,12 +28,19 @@
     <nav class="navbar">
       <a class="navbar__logo" href="index.html"
 
-        ><img src="assets/image/logo1.png" width="150" alt="LOGO"
+        ><img src="assets/image/logo1.png"  alt="LOGO" width="150px"
       /></a>
-      <ul>
-        <input class="search__input" type="text">
-        <img src="assets/image/icon_index/search.svg" alt="">
-
+      <ul class="navbar__list">
+        <div class="navbar__search">
+          <img src="assets/images/icon/list/search.svg" alt="search" />
+          <span></span>
+          <input
+            style="border-style: none"
+            type="text"
+            name="search"
+            placeholder="搜尋"
+          />
+        </div>
         <li><a href="Store.html">音樂商城</a></li>
         <li><a href="#">詞曲交流</a></li>
         <li><a href="#section04">常見問題</a></li>
@@ -41,6 +48,34 @@
         <li><a href="Login.html">登入</a></li>
       </ul>
     </nav>
+    <aside class="navbar__button">
+      <ul class="navbar__button__lines">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </aside>
+
+    <aside class="list__aside">
+      <div>
+        <img src="assets/images/logo.webp" alt="aside-logo" />
+        <p><a href="#">音樂商城</a></p>
+        <p><a href="#">詞曲交流</a></p>
+        <p><a href="#">常見問題</a></p>
+        <p><a href="#">聯絡我們</a></p>
+        <p><a href="#">登入</a></p>
+        <p class="aside__search">
+          <img src="assets/images/icon/list/search.svg" alt="aside-search" />
+          <input
+            style="border-style: none"
+            type="text"
+            name="search"
+            placeholder="搜尋"
+          />
+        </p>
+      </div>
+    </aside>
+
 
     <ul class="movedot">
       <li><a href="#section01" class="dot"></a></li>

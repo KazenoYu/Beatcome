@@ -13,6 +13,8 @@ function callback_play(val) {
   console.log('Out-Get-play!!', val);
   // $("#music-player__play").addClass("isPlaying");//-改按鈕狀態
   $('#music-player__title').text(val.name); //- 顯示歌名
+  $('#album__cover').attr('src', val.fileImg); //-切換圖片
+  // $('#music-player__img-container').addClass('music-player__img-container img'); //-專輯旋轉
   $('#music-player__play i').removeClass('fa-play').addClass('fa-pause'); //改UI顯示
   clearInterval(myTimelineInterval);
   myTimelineInterval = setInterval(renderTimeLine, 100);
@@ -46,37 +48,23 @@ var fileListsVocal = [
     price: '480',
   },
   {
-    name: 'Delirowe-Good Enough',
-    fileUrl: 'assets/music/vocal/Delirowe-Good Enough.mp3',
-    fileImg: 'assets/image/vocal_image/Delirowe-Good Enough.jpg',
-    type: 'Vocal',
-    price: '550',
-  },
-  {
-    name: 'Delirowe-Good Enough',
-    fileUrl: 'assets/music/vocal/Delirowe-Good Enough.mp3',
-    fileImg: 'assets/image/vocal_image/Delirowe-Good Enough.jpg',
-    type: 'Vocal',
-    price: '550',
-  },
-  {
     name: 'Anthem of Rain - Leave The Country',
     fileUrl: 'assets/music/beat/Anthem of Rain - Leave The Country.mp3',
-    fileImg: 'assets/image/beat_image/Anthem of Rain - Leave The Country.jpg',
+    fileImg: 'assets/image/beat_image/Anthem of Rain - Leave The Country.png',
     type: 'Beat ',
     price: '550',
   },
   {
     name: 'Audiobinger - Phony Luv',
     fileUrl: 'assets/music/beat/Audiobinger - Phony Luv.mp3',
-    fileImg: 'assets/image/beat_image/Audiobinger - Phony Luv.jpg',
+    fileImg: 'assets/image/beat_image/Audiobinger - Phony Luv.png',
     type: 'Beat ',
     price: '550',
   },
   {
     name: 'Audiobinger - The Journey',
     fileUrl: 'assets/music/beat/Audiobinger - The Journey.mp3',
-    fileImg: 'assets/image/beat_image/Audiobinger - The Journey.jpg',
+    fileImg: 'assets/image/beat_image/Audiobinger - The Journey.png',
     type: 'Beat ',
     price: '520',
   },
