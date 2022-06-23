@@ -6,12 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Store</title>
     <link rel="stylesheet" href="assets/otherPage.css/page.style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f6dcf461c1.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="assets/css/shoppingCart.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <style>
+      body {
+        background: linear-gradient(to bottom, #121212, #4f76ff);
+      }
+    </style>
   </head>
+
   <body>
     <nav class="navbar">
       <a href="index.html" class="bind_query_A"
@@ -30,16 +45,11 @@
         </div>
         <li><a class="bind_query_A" href="Store.html">音樂商城</a></li>
         <li><a class="bind_query_A" href="Communication.html">詞曲交流</a></li>
-        <li>
-          <a class="bind_query_A" href="index.html?#section04">常見問題</a>
-        </li>
-        <li>
-          <a class="bind_query_A" href="index.html?#section05">聯絡我們</a>
-        </li>
+        <li><a class="bind_query_A" href="#section04">常見問題</a></li>
+        <li><a class="bind_query_A" href="#section05">聯絡我們</a></li>
         <li><a href="Login.html">登入</a></li>
       </ul>
     </nav>
-
     <aside class="navbar__button">
       <ul class="navbar__button__lines">
         <li></li>
@@ -53,8 +63,8 @@
         <img src="assets/images/logo.webp" alt="aside-logo" />
         <p><a href="Store.html">音樂商城</a></p>
         <p><a href="Communication.html">詞曲交流</a></p>
-        <p><a href="index.html?#section04">常見問題</a></p>
-        <p><a href="index.html?#section05">聯絡我們</a></p>
+        <p><a href="#section04">常見問題</a></p>
+        <p><a href="#section05">聯絡我們</a></p>
         <p><a href="Login.html">登入</a></p>
         <p class="aside__search">
           <img src="assets/images/icon/list/search.svg" alt="aside-search" />
@@ -67,28 +77,7 @@
         </p>
       </div>
     </aside>
-
-    <aside class="list__aside">
-      <div>
-        <img src="assets/images/logo.webp" alt="aside-logo" />
-        <p><a href="Store.html">音樂商城</a></p>
-        <p><a href="Communication.html">詞曲交流</a></p>
-        <p><a href="index.html?#section04">常見問題</a></p>
-        <p><a href="index.html?#section05">聯絡我們</a></p>
-        <p><a href="Login.html">登入</a></p>
-        <p class="aside__search">
-          <img src="assets/images/icon/list/search.svg" alt="aside-search" />
-          <input
-            style="border-style: none"
-            type="text"
-            name="search"
-            placeholder="搜尋"
-          />
-        </p>
-      </div>
-    </aside>
-
-    <div class="body-padding">
+    <div class="body__padding">
       <header>
         <article class="main">
           <section class="main-cover">
@@ -123,12 +112,11 @@
           <section class="main-active">
             <ul class="main-active__btn">
               <li>
-                <a href=""
-                  ><img
-                    src="assets/images/unfill.svg"
-                    alt="heart"
-                    height="30px"
-                /></a>
+                <div class="btns">
+                  <button onclick="Toggle1()" id="btnh1" class="btn">
+                    <i class="fas fa-heart"></i>
+                  </button>
+                </div>
               </li>
               <li>
                 <a href=""
@@ -147,7 +135,7 @@
             </ul>
             <ul class="main-active__cart">
               <li>
-                <p>NTD 580</p>
+                <p>NTD 530</p>
               </li>
               <li>
                 <button>
@@ -163,6 +151,7 @@
           </section>
         </article>
       </header>
+
       <article class="info">
         <section class="info-info">
           <h3>歌曲情報</h3>
@@ -175,30 +164,22 @@
             Learn More info: www.facebook.com/zebraisland
           </p>
         </section>
+
         <section class="info-comments">
           <h3>留言</h3>
           <hr />
-          <div class="info-comments-board">
-            <div class="info-comments-board__input">
-              <img src="assets/images/proto.png" alt="proto pics" />
-              <div class="info-comments-board__input__text">
-                <h4>UserName</h4>
+          <div class="info-comments__area">
+            <textarea
+              name=""
+              id=""
+              cols="20"
+              rows="6"
+              placeholder="輸入留言"
+            ></textarea>
 
-                <input type="text" placeholder="請輸入留言．．．" />
-              </div>
-              <div class="info-comments-board__input__submit">
-                <button>送出</button>
-              </div>
-            </div>
-            <hr />
-            <div class="info-comments-board__message">
-              <img src="assets/images/proto.png" alt="proto pics" />
-              <div class="info-comments-board__message__text">
-                <h4>UserName</h4>
-                <p>留言內容</p>
-              </div>
-            </div>
+            <button id="text-btn" class="info-comments__area__btn">送出</button>
           </div>
+          <ul id="page-msg"></ul>
         </section>
       </article>
 
@@ -210,9 +191,14 @@
             alt="song"
             width="100px"
           />
+
           <div class="command-block__text">
             <span
-              ><h4>Temple-Life</h4>
+              ><h4>
+                <a href="page_Shaolin Dub_Temple-Life_index.html">
+                  Temple-Life
+                </a>
+              </h4>
               <h5>Shaolin Dub</h5>
             </span>
             <a href="#"
@@ -222,14 +208,14 @@
         </div>
         <div class="command-block">
           <img
-            src="assets/images/音樂封面/beat_image/05-Ketsa - Lala.png"
+            src="assets/images/音樂封面/人聲/Static In Veronal-The Sparrow.jpg"
             alt="song"
             width="100px"
           />
           <div class="command-block__text">
             <span
-              ><h4>Ketsa</h4>
-              <h5>Lala</h5>
+              ><h4>The Sparrow</h4>
+              <h5>Static In Veronal</h5>
             </span>
             <a href="#"
               ><img src="assets/images/play_gray.svg" alt="playbtn"
@@ -319,7 +305,7 @@
         </div>
       </div>
 
-      <div id="shoppingCart" class="show">
+      <div id="shoppingCart" class="show" style="max-width: 2480px">
         <div class="musicLists inBk"></div>
         <div class="totalInfo inBk">
           <div class="doVerticalMiddle">
@@ -351,5 +337,29 @@
       text="javascript"
       src="assets/javascript/list_navbar_javascript.js"
     ></script>
+    <script>
+      var text = document.querySelector('textarea');
+      var btn = document.getElementById('text-btn');
+      var ul = document.getElementById('page-msg');
+
+      btn.onclick = function () {
+        if (text.value != '') {
+          var li = document.createElement('li');
+          ul.appendChild(li);
+          li.innerHTML = text.value;
+          text.value = '';
+        }
+      };
+
+      var btnvar1 = document.getElementById('btnh1');
+
+      function Toggle1() {
+        if (btnvar1.style.color == 'lightcoral') {
+          btnvar1.style.color = 'grey';
+        } else {
+          btnvar1.style.color = 'lightcoral';
+        }
+      }
+    </script>
   </body>
 </html>

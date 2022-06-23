@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Store</title>
+    <link rel="stylesheet" href="assets/otherPage.css/page.style.css" />
+    <script
+      src="https://kit.fontawesome.com/f6dcf461c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background: linear-gradient(to bottom, #121212, #5c5c5c);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="navbar__logo">
+        <img src="assets/images/logo v.2 noback.png" alt="logo" width="80px" />
+      </a>
+      <ul class="navbar__link">
+        <li><a href="#">音樂商城</a></li>
+        <li><a href="#">詞曲交流</a></li>
+        <li><a href="#">常見問題</a></li>
+        <li><a href="#">聯絡我們</a></li>
+        <li><a href="#">登入</a></li>
+      </ul>
+    </nav>
+    <div class="body-padding">
+      <header>
+        <article class="main">
+          <section class="main-cover">
+            <img
+              class="main-cover__pic1"
+              src="assets/images/音樂封面/beat_image/15-kaleidoplasm - thanks for stealing my bike, jerk.png"
+              alt="cover"
+              width="250px"
+            />
+            <img
+              class="main-cover__pic2"
+              src="assets/images/音樂封面/beat_image/15-kaleidoplasm - thanks for stealing my bike, jerk.png"
+              alt="cover"
+              width="210px"
+            />
+          </section>
+          <section class="main-text">
+            <h1>thanks for stealing my bike, jerk</h1>
+            <h2>kaleidoplasm</h2>
+            <a href="#"
+              ><img src="assets/images/beat.svg" alt="beat" width="80px"
+            /></a>
+            <p>
+              <img
+                src="assets/images/fillheart.svg"
+                alt="hearted"
+                height="20px"
+              />30 &nbsp
+              <img src="assets/images/share.svg" alt="shared" height="20px" />23
+            </p>
+          </section>
+          <section class="main-active">
+            <ul class="main-active__btn">
+              <li>
+                <div class="btns">
+                  <button onclick="Toggle1()" id="btnh1" class="btn">
+                    <i class="fas fa-heart"></i>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="assets/images/share.svg" alt="share" height="30px"
+                /></a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="assets/images/play_pink.svg"
+                    alt="play"
+                    height="30px"
+                  />
+                </a>
+              </li>
+            </ul>
+            <ul class="main-active__cart">
+              <li>
+                <p>NTD 520</p>
+              </li>
+              <li>
+                <button>
+                  <img
+                    src="assets/images/addcart.svg"
+                    alt="add cart"
+                    width="20px"
+                  />
+                  加入購物車
+                </button>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </header>
+    </div>
+    <article class="info">
+      <section class="info-info">
+        <h3>歌曲情報</h3>
+        <hr />
+        <p>
+          Produced by Rasmus Lill <br />
+          Mastered by Håkan Åkesson <br />
+          Lyrics by Rasmus <br />
+          <br />
+          Learn More info: www.facebook.com/zebraisland
+        </p>
+      </section>
+
+      <section class="info-comments">
+        <h3>留言</h3>
+        <hr />
+        <div class="info-comments__area">
+          <textarea
+            name=""
+            id=""
+            cols="20"
+            rows="6"
+            placeholder="輸入留言"
+          ></textarea>
+
+          <button id="text-btn" class="info-comments__area__btn">送出</button>
+        </div>
+        <ul id="page-msg"></ul>
+      </section>
+    </article>
+
+    <aside class="command">
+      <h3>相似推薦</h3>
+      <div class="command-block">
+        <img
+          src="assets/images/音樂封面/beat_image/13-Shaolin Dub - Temple-Life.png"
+          alt="song"
+          width="100px"
+        />
+        <div class="command-block__text">
+          <span
+            ><h4>Temple-Life</h4>
+            <h5>Shaolin Dub</h5>
+          </span>
+          <a href="#"
+            ><img src="assets/images/play_gray.svg" alt="playbtn"
+          /></a>
+        </div>
+      </div>
+      <div class="command-block">
+        <img
+          src="assets/images/音樂封面/Effects cover/神聖.jpg"
+          alt="song"
+          width="100px"
+        />
+        <div class="command-block__text">
+          <span
+            ><h4>神聖</h4>
+            <h5>Effects</h5>
+          </span>
+          <a href="#"
+            ><img src="assets/images/play_gray.svg" alt="playbtn"
+          /></a>
+        </div>
+      </div>
+      <div class="command-block">
+        <img
+          src="assets/images/音樂封面/beat_image/17-Popoi - Dorila y Mello.png"
+          alt="song"
+          width="100px"
+        />
+        <div class="command-block__text">
+          <span
+            ><h4>Popoi</h4>
+            <h5>Dorila y Mello</h5>
+          </span>
+          <a href="#"
+            ><img src="assets/images/play_gray.svg" alt="playbtn"
+          /></a>
+        </div>
+      </div>
+    </aside>
+
+    <script>
+      var text = document.querySelector('textarea');
+      var btn = document.getElementById('text-btn');
+      var ul = document.getElementById('page-msg');
+
+      btn.onclick = function () {
+        if (text.value != '') {
+          var li = document.createElement('li');
+          ul.appendChild(li);
+          li.innerHTML = text.value;
+          text.value = '';
+        }
+      };
+
+      var btnvar1 = document.getElementById('btnh1');
+
+      function Toggle1() {
+        if (btnvar1.style.color == 'lightcoral') {
+          btnvar1.style.color = 'grey';
+        } else {
+          btnvar1.style.color = 'lightcoral';
+        }
+      }
+    </script>
+  </body>
+</html>

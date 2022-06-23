@@ -147,12 +147,17 @@ body {
   background: linear-gradient(to bottom, #121212, #4f76ff);
 }
 
-.body-padding {
+.body__padding {
   margin: 2% 10%;
   position: absolute;
   top: 10%;
   width: 80%;
   height: 200vh;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .main {
@@ -211,7 +216,7 @@ body {
 
 .main-text h1 {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 38px;
   padding-bottom: 5px;
 }
 
@@ -246,6 +251,26 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.main-active .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30px;
+  margin-right: 4px;
+}
+
+.main-active .btn {
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  outline: none;
+  color: grey;
+}
+
+.main-active .btn i:hover {
+  cursor: pointer;
 }
 
 .main-active__btn {
@@ -319,11 +344,11 @@ body {
   margin-right: 48px;
 }
 .navbar__list a {
+  text-decoration: none;
+  color: #ffffff;
   position: relative;
   display: block;
   transition: color 300ms;
-  color: white;
-  text-decoration: none;
 }
 
 .navbar__list a::before {
@@ -561,6 +586,7 @@ body {
   /*display: flex;*/
   width: 110px;
 }
+
 .info {
   display: inline-block;
   -webkit-box-pack: space-evenly;
@@ -587,30 +613,33 @@ body {
   line-height: 1.5rem;
 }
 
-.info-comments-board {
+.info-comments__area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-self: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
   width: 90%;
-  height: 0vh;
-  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 20px;
+}
+
+.info-comments__area__btn {
+  margin: auto;
+  width: 80px;
+  height: 30px;
+  background: #808080;
   border-radius: 10px;
+  color: white;
 }
 
-.info-comments-board > hr {
-  width: 90%;
-  margin: 0;
-}
-
-.info-comments-board__input,
-.info-comments-board__message {
+.info-comments textarea {
+  resize: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -624,57 +653,45 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 80%;
+  width: 60%;
   padding: 20px;
-  margin: 0;
-}
-
-.info-comments-board__input button,
-.info-comments-board__message button {
-  width: 80px;
-  height: 40px;
-  background: gray;
-  border-radius: 20px;
-  color: white;
+  margin: auto;
+  margin-bottom: 20px;
+  background: none;
   border: none;
-  -webkit-box-shadow: 1px 2px 5px #474747;
-  box-shadow: 1px 2px 5px #474747;
+  border-radius: 10px;
+  color: white;
+  font-size: large;
 }
 
-.info-comments-board__input__text {
-  margin-left: 20px;
+.info-comments ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: flex-start;
+  margin-left: 6%;
+  margin-top: 20px auto;
+  width: 80%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 
-.info-comments-board__input__text h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.info-comments-board__input__text input {
-  width: 300px;
-  height: 50px;
+.info-comments li {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  width: 100%;
+  height: auto;
+  line-height: 30px;
+  border-radius: 10px;
   padding: 10px;
-  border: 1px solid #474747;
-  cursor: text;
-  border-radius: 5px;
-}
-
-.info-comments-board__input__submit {
-  margin-left: 20px;
-}
-
-.info-comments-board__message__text {
-  margin-left: 20px;
-}
-
-.info-comments-board__message__text h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.info-comments-board__message__text p {
-  width: 300px;
-  height: 50px;
+  margin: 4px;
 }
 
 .command {
@@ -749,8 +766,6 @@ body {
 .command-block__text span h4 {
   font-weight: bold;
 }
-/*# sourceMappingURL=page.style.css.map */
-
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 .music-player__container {
