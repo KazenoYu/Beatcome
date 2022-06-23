@@ -14,7 +14,6 @@
   z-index: 10;
 }
 
-// 光碟會跑版:)
 .music-player__img-container {
   position: relative;
   width: 110px;
@@ -46,7 +45,7 @@
   animation-play-state: paused;
 }
 
-.music-player__container.play .musice-player__img-container img {
+.music-player__img-container img.show {
   animation-play-state: running;
 }
 
@@ -69,7 +68,6 @@
 }
 
 .music-player__action-btn-prev {
-  // transparent background透明
   background-color: transparent;
   border: 0;
   color: #191719;
@@ -145,10 +143,9 @@
   padding: 10px 10px 10px 0px;
   opacity: 1;
   z-index: 0;
-
-  h4 {
-    margin: 0px;
-  }
+}
+h4 {
+  margin: 0px;
 }
 
 .music-player__action-btn-list {
@@ -159,224 +156,4 @@
   cursor: pointer;
   padding: 10px;
   margin: 0 10px;
-}
-
-.aside-trigger {
-  position: fixed;
-  z-index: 100;
-  display: flex;
-  top: 20px;
-  right: 40px;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.aside-trigger span {
-  /* absolute會找上一個position作相對 */
-  z-index: 100;
-  position: absolute;
-  width: 50%;
-  height: 2px;
-  border-radius: 10px;
-  background-color: #9599e2;
-  transition: margin-top 300ms, transform 300ms;
-  opacity: 0;
-}
-
-.aside-trigger span:nth-child(1) {
-  margin-top: 20px;
-  width: 50%;
-}
-
-.aside-trigger span:nth-child(3) {
-  margin-top: -20px;
-  width: 50%;
-}
-
-.aside-trigger.active span:nth-child(1) {
-  /* margin-top:0;  讓(3)與(1)重合 */
-  margin-top: 0;
-  transform: rotate(225deg);
-}
-
-.aside-trigger.active span:nth-child(2) {
-  transform: rotate(315deg);
-}
-
-.aside-trigger.active span:nth-child(3) {
-  margin-top: 0;
-  transform: rotate(135deg);
-}
-
-.aside {
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  padding-top: 100px;
-  height: 200px;
-  width: 100vw;
-
-  background-color: #ffffff;
-  transition: right 300ms;
-  transform: translate(0.1) 300ms;
-}
-
-.aside a {
-  display: block;
-  font-size: 24px;
-  padding: 20px;
-  color: black;
-  background-color: inherit;
-  z-index: 10;
-  position: relative;
-  text-decoration: none;
-  transition: color 300ms;
-}
-
-.aside a::before {
-  position: absolute;
-  display: block;
-  width: 0%;
-  height: 1.5px;
-  background-color: rgb(50, 50, 50);
-  content: '';
-  bottom: 15px;
-  left: 0.5;
-  transition: width 300ms;
-}
-
-.aside a:hover::before {
-  width: 45%;
-}
-.aside.active {
-  right: 0;
-  translate: (1);
-}
-
-.txtAlnLft {
-  text-align: left;
-}
-.inBk {
-  display: inline-block;
-}
-#shoppingCart {
-  position: fixed;
-  bottom: 75px;
-  width: 100vw;
-  /* max-width:900px; */
-  padding: 20px 50px 60px 20px;
-  /* max-height: calc(100vh - 85px); */
-  background: #c1c1c1;
-  color: #303030;
-  transition: all 0.4s linear;
-  transform: translate(0, 100%);
-  text-align: center;
-  z-index: 9;
-}
-#shoppingCart.show {
-  transform: translate(0, 0);
-}
-.musicLists {
-  width: 74%;
-  vertical-align: top;
-  height: 152px;
-  overflow: auto;
-  padding: 15px 0;
-}
-.musicItem {
-  width: 100%;
-  margin-bottom: 10px;
-}
-.musicItem .idx {
-  width: 7%;
-}
-.musicItem .name {
-  width: 22%;
-}
-.musicItem .description {
-  width: 25%;
-}
-.musicItem .type {
-  width: 12%;
-}
-.musicItem .type span {
-  display: inline-block;
-  padding: 4px 0px;
-  width: 95px;
-  border-radius: 15px;
-  transform: rotate(0);
-}
-.musicItem .type.isVocal span {
-  background: #8591ff;
-  color: #3a4cf0;
-}
-.musicItem .type.isBeat span {
-  background: #adadad;
-  color: #4a4949;
-}
-.musicItem .type.isEffects span {
-  background: #ffe499;
-  color: #dbaf37;
-}
-.musicItem .price {
-  transform: rotate(0);
-  width: 12%;
-  margin: 0 20px;
-}
-.musicLists button {
-  border: 1px solid #303030;
-  background: none;
-  padding: 3px 4px;
-  border-radius: 100%;
-  font-size: 14px;
-  color: #303030;
-}
-.totalInfo {
-  width: 24%;
-  text-align: center;
-  border-left: 3px solid #a3a3a3;
-  height: 100%;
-}
-.totalInfo::before {
-  content: '';
-  width: 1px;
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-.totalInfo p,
-.totalInfo button {
-  margin-bottom: 10px;
-}
-.totalInfo .doVerticalMiddle {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 10px 0;
-  font-weight: bold;
-}
-#payShopList {
-  padding: 10px 28px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 18px;
-  background: #303030;
-  border-radius: 15px;
-  border: none;
-}
-#toggleShopList {
-  position: absolute;
-  right: 30px;
-  top: 0px;
-  font-size: 36px;
-  color: #303030;
-  padding: 8px 25px;
-  transform: translate(0, -100%);
-  background: #c1c1c1;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  cursor: pointer;
 }
